@@ -15,3 +15,6 @@ public class ProyectoX {
         //XD
     }
 }
+//https://www.youtube.com/watch?v=qHQXUrrubcs -> Como hacer y subir cosas al repositotio
+// https://www.youtube.com/watch?v=LdDVi6_HdVs -> solucion de error que me salio, algo de las branches
+
