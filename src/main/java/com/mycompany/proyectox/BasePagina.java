@@ -92,6 +92,11 @@ public class BasePagina extends javax.swing.JFrame {
         });
 
         BotonExplorar.setText("Explorar");
+        BotonExplorar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BotonExplorarActionPerformed(evt);
+            }
+        });
 
         BotonNotificacion.setText("Notificaciones");
         BotonNotificacion.addActionListener(new java.awt.event.ActionListener() {
@@ -333,6 +338,13 @@ public class BasePagina extends javax.swing.JFrame {
     private void TextQuienSeguirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TextQuienSeguirActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_TextQuienSeguirActionPerformed
+
+    private void BotonExplorarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonExplorarActionPerformed
+        // TODO add your handling code here:
+        new PaginaExplorar().setVisible(true);
+        new BasePagina().setVisible(false);
+        
+    }//GEN-LAST:event_BotonExplorarActionPerformed
 
     /**
      * @param args the command line arguments
