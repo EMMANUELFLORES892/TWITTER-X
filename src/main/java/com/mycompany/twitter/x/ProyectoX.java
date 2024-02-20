@@ -11,7 +11,7 @@ package com.mycompany.twitter.x;
 public class ProyectoX {
 
     public static void main(String[] args) {
-        System.out.println("Prueba 5!");
+        System.out.println("Prueba 6!");
         //XD
     }
 }
