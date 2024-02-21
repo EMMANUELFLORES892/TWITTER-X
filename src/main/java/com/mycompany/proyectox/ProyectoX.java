@@ -11,8 +11,8 @@ package com.mycompany.proyectox;
 public class ProyectoX {
 
     public static void main(String[] args) {
-        System.out.println("Prueba 5!");
-        //XD
+        System.out.println("Main");
+        
     }
 }
 //https://www.youtube.com/watch?v=qHQXUrrubcs -> Como hacer y subir cosas al repositotio
