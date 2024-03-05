@@ -118,6 +118,11 @@ public class BasePagina extends javax.swing.JFrame {
         BotonSiguiendo.setText("Siguiendo");
 
         BotonPerfil2.setText("Perfil");
+        BotonPerfil2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BotonPerfil2ActionPerformed(evt);
+            }
+        });
 
         TextPublicacion.setText("Escribe algo...");
         jScrollPane4.setViewportView(TextPublicacion);
@@ -324,7 +329,9 @@ public class BasePagina extends javax.swing.JFrame {
     }//GEN-LAST:event_BotonInicioActionPerformed
 
     private void BotonNotificacionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonNotificacionActionPerformed
-        // TODO add your handling code here:
+        //Hasta ahora este boton muestra la seccion de notificaciones.-Jerson.
+        new SeccionNotificaciones().setVisible(true);
+        this.setVisible(false);
     }//GEN-LAST:event_BotonNotificacionActionPerformed
 
     private void BotonMasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonMasActionPerformed
@@ -340,11 +347,17 @@ public class BasePagina extends javax.swing.JFrame {
     }//GEN-LAST:event_TextQuienSeguirActionPerformed
 
     private void BotonExplorarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonExplorarActionPerformed
-        // TODO add your handling code here:
+        //Hasta ahora este boton muestra la seccion de explorar.-Jerson.
         new PaginaExplorar().setVisible(true);
-        new BasePagina().setVisible(false);
+        this.setVisible(false);
         
     }//GEN-LAST:event_BotonExplorarActionPerformed
+
+    private void BotonPerfil2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonPerfil2ActionPerformed
+        //Hasta ahora este boton muestra la seccion de perfil.-Jerson.
+        new SeccionPerfil().setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_BotonPerfil2ActionPerformed
 
     /**
      * @param args the command line arguments
