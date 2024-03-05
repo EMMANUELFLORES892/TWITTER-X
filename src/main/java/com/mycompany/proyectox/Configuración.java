@@ -158,6 +158,7 @@ public class Configuración extends javax.swing.JFrame {
 
     private void infoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_infoActionPerformed
         // TODO add your handling code here:
+        //Prueba commit
     }//GEN-LAST:event_infoActionPerformed
 
     private void info1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_info1ActionPerformed
