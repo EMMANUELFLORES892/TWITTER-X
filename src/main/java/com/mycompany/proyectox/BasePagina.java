@@ -323,7 +323,7 @@ public class BasePagina extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void BotonPostActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonPostActionPerformed
-        // TODO add your handling code here:
+        new SeccionCrearPublicacion().setVisible(true);
     }//GEN-LAST:event_BotonPostActionPerformed
 
     private void BotonInicioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonInicioActionPerformed
