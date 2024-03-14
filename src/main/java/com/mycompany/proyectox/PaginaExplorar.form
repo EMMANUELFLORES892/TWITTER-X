@@ -79,9 +79,7 @@
                       <Component id="filler2" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
-              <EmptySpace max="-2" attributes="0"/>
-              <Component id="jScrollBar1" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -137,11 +135,6 @@
               <EmptySpace max="-2" attributes="0"/>
               <Component id="jButton17" min="-2" pref="52" max="-2" attributes="0"/>
               <EmptySpace pref="18" max="32767" attributes="0"/>
-          </Group>
-          <Group type="102" alignment="0" attributes="0">
-              <EmptySpace min="-2" max="-2" attributes="0"/>
-              <Component id="jScrollBar1" min="-2" pref="594" max="-2" attributes="0"/>
-              <EmptySpace max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -407,8 +400,6 @@
       <AuxValues>
         <AuxValue name="classDetails" type="java.lang.String" value="Box.Filler.VerticalGlue"/>
       </AuxValues>
-    </Component>
-    <Component class="javax.swing.JScrollBar" name="jScrollBar1">
     </Component>
     <Component class="javax.swing.Box$Filler" name="filler2">
       <Properties>
