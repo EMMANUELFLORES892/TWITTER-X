@@ -67,14 +67,12 @@
                       <Component id="BotonCuentaRecom2" alignment="1" max="32767" attributes="0"/>
                       <Component id="BotonCuentaRecom1" alignment="1" max="32767" attributes="0"/>
                       <Component id="BotonCuentaRecom3" alignment="1" max="32767" attributes="0"/>
-                      <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
-                          <Component id="LabelQueEstaPasando" alignment="0" max="32767" attributes="0"/>
-                          <Component id="BotonMasTendencias" alignment="0" max="32767" attributes="0"/>
-                          <Component id="BotonTendencia3" alignment="0" max="32767" attributes="0"/>
-                          <Component id="BotonTendencia2" alignment="0" max="32767" attributes="0"/>
-                          <Component id="BotonTendencia1" alignment="0" max="32767" attributes="0"/>
-                          <Component id="BotonNoticias" alignment="0" min="-2" pref="99" max="-2" attributes="0"/>
-                      </Group>
+                      <Component id="LabelQueEstaPasando" alignment="0" max="32767" attributes="0"/>
+                      <Component id="BotonMasTendencias" alignment="0" max="32767" attributes="0"/>
+                      <Component id="BotonTendencia3" alignment="0" max="32767" attributes="0"/>
+                      <Component id="BotonTendencia2" alignment="0" max="32767" attributes="0"/>
+                      <Component id="BotonTendencia1" alignment="0" max="32767" attributes="0"/>
+                      <Component id="BotonNoticias" alignment="0" min="-2" pref="99" max="-2" attributes="0"/>
                       <Component id="LabelAQuienSeguir" alignment="0" min="-2" pref="114" max="-2" attributes="0"/>
                   </Group>
               </Group>
@@ -385,7 +383,7 @@
     </Component>
     <Component class="javax.swing.JButton" name="BotonParaTi">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Para ti"/>
+        <Property name="text" type="java.lang.String" value="&lt;html&gt;&lt;p style = &quot;font: Berlin Sans FB &quot;&gt;Para ti&lt;/p&gt;&lt;/html&gt; "/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="BotonSiguiendo">
