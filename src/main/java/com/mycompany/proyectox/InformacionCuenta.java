@@ -4,6 +4,8 @@
  */
 package com.mycompany.proyectox;
 
+import java.awt.Color;
+
 /**
  *
  * @author CCCU
@@ -15,6 +17,7 @@ public class InformacionCuenta extends javax.swing.JFrame {
      */
     public InformacionCuenta() {
         initComponents();
+        this.getContentPane().setBackground(Color.white);
     }
 
     /**
@@ -27,81 +30,203 @@ public class InformacionCuenta extends javax.swing.JFrame {
     private void initComponents() {
 
         jButton5 = new javax.swing.JButton();
+        usuario1 = new javax.swing.JLabel();
+        correo_electronico2 = new javax.swing.JLabel();
+        jSeparator3 = new javax.swing.JSeparator();
         jLabel1 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
-        jButton7 = new javax.swing.JButton();
-        jButton8 = new javax.swing.JButton();
-        jButton9 = new javax.swing.JButton();
-        jButton10 = new javax.swing.JButton();
-        jButton11 = new javax.swing.JButton();
-        jButton12 = new javax.swing.JButton();
+        correo_electronico = new javax.swing.JLabel();
+        usuario = new javax.swing.JLabel();
+        telefono1 = new javax.swing.JLabel();
+        verificado = new javax.swing.JLabel();
+        jSeparator1 = new javax.swing.JSeparator();
+        posts_protegidos = new javax.swing.JLabel();
+        creacioncuenta = new javax.swing.JLabel();
+        pais = new javax.swing.JLabel();
+        idiomas = new javax.swing.JLabel();
+        genero = new javax.swing.JLabel();
+        fecha = new javax.swing.JLabel();
+        edad = new javax.swing.JLabel();
+        automatizacion = new javax.swing.JLabel();
+        jSeparator2 = new javax.swing.JSeparator();
+        jSeparator4 = new javax.swing.JSeparator();
+        jSeparator5 = new javax.swing.JSeparator();
+        jSeparator6 = new javax.swing.JSeparator();
 
         jButton5.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jButton5.setText("Teléfono");
         jButton5.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+
+        usuario1.setBackground(new java.awt.Color(255, 255, 255));
+        usuario1.setText("Nombre de usuario");
+        usuario1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                usuario1MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                usuario1MouseExited(evt);
+            }
+        });
+
+        correo_electronico2.setBackground(new java.awt.Color(255, 255, 255));
+        correo_electronico2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        correo_electronico2.setText("Verificado");
+        correo_electronico2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                correo_electronico2MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                correo_electronico2MouseExited(evt);
+            }
+        });
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jLabel1.setFont(new java.awt.Font("Segoe UI Black", 1, 18)); // NOI18N
         jLabel1.setText("Información de la cuenta");
 
-        jButton1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jButton1.setText("Verificado");
-        jButton1.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+        correo_electronico.setBackground(new java.awt.Color(255, 255, 255));
+        correo_electronico.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        correo_electronico.setText("Correo electrónico");
+        correo_electronico.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                correo_electronicoMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                correo_electronicoMouseExited(evt);
             }
         });
 
-        jButton2.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jButton2.setText("Nombre de usuario");
-        jButton2.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-
-        jButton3.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jButton3.setText("Correo electrónico");
-        jButton3.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
+        usuario.setBackground(new java.awt.Color(255, 255, 255));
+        usuario.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        usuario.setText("Nombre de usuario");
+        usuario.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                usuarioMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                usuarioMouseExited(evt);
             }
         });
 
-        jButton4.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jButton4.setText("Teléfono");
-        jButton4.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        telefono1.setBackground(new java.awt.Color(255, 255, 255));
+        telefono1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        telefono1.setText("Teléfono");
+        telefono1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                telefono1MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                telefono1MouseExited(evt);
+            }
+        });
 
-        jButton6.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jButton6.setText("Creación de la cuenta");
-        jButton6.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        verificado.setBackground(new java.awt.Color(255, 255, 255));
+        verificado.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        verificado.setText("Verificado");
+        verificado.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                verificadoMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                verificadoMouseExited(evt);
+            }
+        });
 
-        jButton7.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jButton7.setText("Idioma");
-        jButton7.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        posts_protegidos.setBackground(new java.awt.Color(255, 255, 255));
+        posts_protegidos.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        posts_protegidos.setText("Post protegidos");
+        posts_protegidos.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                posts_protegidosMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                posts_protegidosMouseExited(evt);
+            }
+        });
 
-        jButton8.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jButton8.setText("Posts protegidos");
-        jButton8.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        creacioncuenta.setBackground(new java.awt.Color(255, 255, 255));
+        creacioncuenta.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        creacioncuenta.setText("Creación de la cuenta");
+        creacioncuenta.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                creacioncuentaMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                creacioncuentaMouseExited(evt);
+            }
+        });
 
-        jButton9.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jButton9.setText("Pais");
-        jButton9.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        pais.setBackground(new java.awt.Color(255, 255, 255));
+        pais.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        pais.setText("País");
+        pais.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                paisMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                paisMouseExited(evt);
+            }
+        });
 
-        jButton10.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jButton10.setText("Genero");
-        jButton10.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        idiomas.setBackground(new java.awt.Color(255, 255, 255));
+        idiomas.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        idiomas.setText("Idiomas");
+        idiomas.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                idiomasMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                idiomasMouseExited(evt);
+            }
+        });
 
-        jButton11.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jButton11.setText("Fecha de nacimiento");
-        jButton11.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        genero.setBackground(new java.awt.Color(255, 255, 255));
+        genero.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        genero.setText("Género");
+        genero.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                generoMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                generoMouseExited(evt);
+            }
+        });
 
-        jButton12.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jButton12.setText("Edad");
-        jButton12.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        fecha.setBackground(new java.awt.Color(255, 255, 255));
+        fecha.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        fecha.setText("Fecha de nacimiento");
+        fecha.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                fechaMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                fechaMouseExited(evt);
+            }
+        });
+
+        edad.setBackground(new java.awt.Color(255, 255, 255));
+        edad.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        edad.setText("Edad");
+        edad.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                edadMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                edadMouseExited(evt);
+            }
+        });
+
+        automatizacion.setBackground(new java.awt.Color(255, 255, 255));
+        automatizacion.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        automatizacion.setText("Automatización");
+        automatizacion.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                automatizacionMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                automatizacionMouseExited(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -112,20 +237,35 @@ public class InformacionCuenta extends javax.swing.JFrame {
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 463, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(0, 28, Short.MAX_VALUE)
+                .addContainerGap(56, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton12, javax.swing.GroupLayout.PREFERRED_SIZE, 566, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton11, javax.swing.GroupLayout.PREFERRED_SIZE, 566, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton10, javax.swing.GroupLayout.PREFERRED_SIZE, 566, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton9, javax.swing.GroupLayout.PREFERRED_SIZE, 566, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton8, javax.swing.GroupLayout.PREFERRED_SIZE, 566, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 566, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton7, javax.swing.GroupLayout.PREFERRED_SIZE, 566, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 566, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 566, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 566, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 566, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(26, 26, 26))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(56, 56, 56)
+                        .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 508, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(automatizacion, javax.swing.GroupLayout.PREFERRED_SIZE, 508, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(fecha, javax.swing.GroupLayout.PREFERRED_SIZE, 508, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(genero, javax.swing.GroupLayout.PREFERRED_SIZE, 508, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(idiomas, javax.swing.GroupLayout.PREFERRED_SIZE, 508, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(pais, javax.swing.GroupLayout.PREFERRED_SIZE, 508, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(posts_protegidos, javax.swing.GroupLayout.PREFERRED_SIZE, 508, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(layout.createSequentialGroup()
+                            .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 508, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addContainerGap())
+                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(verificado, javax.swing.GroupLayout.PREFERRED_SIZE, 508, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(telefono1, javax.swing.GroupLayout.PREFERRED_SIZE, 508, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(usuario, javax.swing.GroupLayout.PREFERRED_SIZE, 502, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(correo_electronico, javax.swing.GroupLayout.PREFERRED_SIZE, 508, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGap(50, 50, 50)))
+                    .addComponent(jSeparator4, javax.swing.GroupLayout.PREFERRED_SIZE, 508, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                        .addComponent(jSeparator5)
+                        .addComponent(creacioncuenta, javax.swing.GroupLayout.DEFAULT_SIZE, 508, Short.MAX_VALUE))
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                        .addComponent(jSeparator6, javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(edad, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 508, Short.MAX_VALUE))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -133,40 +273,175 @@ public class InformacionCuenta extends javax.swing.JFrame {
                 .addGap(20, 20, 20)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(usuario, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(telefono1, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(correo_electronico, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jSeparator4, javax.swing.GroupLayout.PREFERRED_SIZE, 4, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(verificado, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(6, 6, 6)
+                .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 0, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(posts_protegidos, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(creacioncuenta, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jSeparator5, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 0, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(pais, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(idiomas, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(genero, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(fecha, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(48, 48, 48)
-                .addComponent(jButton8, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(44, 44, 44)
-                .addComponent(jButton9, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jButton7, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(jButton10, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jButton11, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jButton12, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(10, Short.MAX_VALUE))
+                .addComponent(jSeparator6, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(2, 2, 2)
+                .addComponent(edad, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(automatizacion, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton3ActionPerformed
+    private void correo_electronicoMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_correo_electronicoMouseEntered
+        correo_electronico.setBackground(new Color(227,229,229));
+    }//GEN-LAST:event_correo_electronicoMouseEntered
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void correo_electronicoMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_correo_electronicoMouseExited
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+        correo_electronico.setBackground(new Color(255,255,255));
+    }//GEN-LAST:event_correo_electronicoMouseExited
+
+    private void usuarioMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_usuarioMouseEntered
+        usuario.setBackground(new Color(227,229,229));
+    }//GEN-LAST:event_usuarioMouseEntered
+
+    private void usuarioMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_usuarioMouseExited
+        // TODO add your handling code here:
+        this.setBackground(new Color(255,255,255));
+    }//GEN-LAST:event_usuarioMouseExited
+
+    private void usuario1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_usuario1MouseEntered
+        this.setBackground(new Color(227,229,229));
+    }//GEN-LAST:event_usuario1MouseEntered
+
+    private void usuario1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_usuario1MouseExited
+        // TODO add your handling code here:
+        this.setBackground(new Color(255,255,255));
+    }//GEN-LAST:event_usuario1MouseExited
+
+    private void telefono1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_telefono1MouseEntered
+        // TODO add your handling code here:
+        this.setBackground(new Color(227,229,229));
+    }//GEN-LAST:event_telefono1MouseEntered
+
+    private void telefono1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_telefono1MouseExited
+        // TODO add your handling code here:
+        this.setBackground(new Color(255,255,255));
+    }//GEN-LAST:event_telefono1MouseExited
+
+    private void verificadoMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_verificadoMouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_verificadoMouseEntered
+
+    private void verificadoMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_verificadoMouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_verificadoMouseExited
+
+    private void correo_electronico2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_correo_electronico2MouseEntered
+        // TODO add your handling code here:
+        this.setBackground(new Color(227,229,229));
+    }//GEN-LAST:event_correo_electronico2MouseEntered
+
+    private void correo_electronico2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_correo_electronico2MouseExited
+        // TODO add your handling code here:
+        this.setBackground(new Color(255,255,255));
+    }//GEN-LAST:event_correo_electronico2MouseExited
+
+    private void posts_protegidosMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_posts_protegidosMouseEntered
+        // TODO add your handling code here:
+        this.setBackground(new Color(227,229,229));
+    }//GEN-LAST:event_posts_protegidosMouseEntered
+
+    private void posts_protegidosMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_posts_protegidosMouseExited
+        // TODO add your handling code here:
+        this.setBackground(new Color(255,255,255));
+    }//GEN-LAST:event_posts_protegidosMouseExited
+
+    private void creacioncuentaMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_creacioncuentaMouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_creacioncuentaMouseEntered
+
+    private void creacioncuentaMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_creacioncuentaMouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_creacioncuentaMouseExited
+
+    private void paisMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_paisMouseEntered
+        // TODO add your handling code here:
+        this.setBackground(new Color(227,229,229));
+    }//GEN-LAST:event_paisMouseEntered
+
+    private void paisMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_paisMouseExited
+        // TODO add your handling code here:
+        this.setBackground(new Color(255,255,255));
+    }//GEN-LAST:event_paisMouseExited
+
+    private void idiomasMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_idiomasMouseEntered
+        // TODO add your handling code here:
+        this.setBackground(new Color(227,229,229));
+    }//GEN-LAST:event_idiomasMouseEntered
+
+    private void idiomasMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_idiomasMouseExited
+        // TODO add your handling code here:
+        this.setBackground(new Color(255,255,255));
+    }//GEN-LAST:event_idiomasMouseExited
+
+    private void generoMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_generoMouseEntered
+        // TODO add your handling code here:
+        this.setBackground(new Color(227,229,229));
+    }//GEN-LAST:event_generoMouseEntered
+
+    private void generoMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_generoMouseExited
+        // TODO add your handling code here:
+        this.setBackground(new Color(255,255,255));
+    }//GEN-LAST:event_generoMouseExited
+
+    private void fechaMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_fechaMouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_fechaMouseEntered
+
+    private void fechaMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_fechaMouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_fechaMouseExited
+
+    private void edadMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_edadMouseEntered
+        // TODO add your handling code here:
+        this.setBackground(new Color(227,229,229));
+    }//GEN-LAST:event_edadMouseEntered
+
+    private void edadMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_edadMouseExited
+        // TODO add your handling code here:
+        this.setBackground(new Color(255,255,255));
+    }//GEN-LAST:event_edadMouseExited
+
+    private void automatizacionMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_automatizacionMouseEntered
+        // TODO add your handling code here:
+        this.setBackground(new Color(227,229,229));
+    }//GEN-LAST:event_automatizacionMouseEntered
+
+    private void automatizacionMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_automatizacionMouseExited
+        // TODO add your handling code here:
+        this.setBackground(new Color(255,255,255));
+    }//GEN-LAST:event_automatizacionMouseExited
 
     /**
      * @param args the command line arguments
@@ -204,18 +479,27 @@ public class InformacionCuenta extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton10;
-    private javax.swing.JButton jButton11;
-    private javax.swing.JButton jButton12;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
+    private javax.swing.JLabel automatizacion;
+    private javax.swing.JLabel correo_electronico;
+    private javax.swing.JLabel correo_electronico2;
+    private javax.swing.JLabel creacioncuenta;
+    private javax.swing.JLabel edad;
+    private javax.swing.JLabel fecha;
+    private javax.swing.JLabel genero;
+    private javax.swing.JLabel idiomas;
     private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
-    private javax.swing.JButton jButton7;
-    private javax.swing.JButton jButton8;
-    private javax.swing.JButton jButton9;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JSeparator jSeparator1;
+    private javax.swing.JSeparator jSeparator2;
+    private javax.swing.JSeparator jSeparator3;
+    private javax.swing.JSeparator jSeparator4;
+    private javax.swing.JSeparator jSeparator5;
+    private javax.swing.JSeparator jSeparator6;
+    private javax.swing.JLabel pais;
+    private javax.swing.JLabel posts_protegidos;
+    private javax.swing.JLabel telefono1;
+    private javax.swing.JLabel usuario;
+    private javax.swing.JLabel usuario1;
+    private javax.swing.JLabel verificado;
     // End of variables declaration//GEN-END:variables
 }
