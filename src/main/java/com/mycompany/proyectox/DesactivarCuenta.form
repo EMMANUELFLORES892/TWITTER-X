@@ -89,7 +89,7 @@
               <Component id="jSeparator5" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
               <Component id="B_Desactivar" min="-2" pref="39" max="-2" attributes="0"/>
-              <EmptySpace pref="32" max="32767" attributes="0"/>
+              <EmptySpace pref="40" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -113,7 +113,7 @@
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel3">
       <Properties>
-        <Property name="text" type="java.lang.String" value="&lt;html&gt;&#xa;&lt;h2&gt;Esta acci&#xf3;n desactivar&#xe1; tu cuenta&lt;/h2&gt;&#xa;&lt;p&gt;Est&#xe1;s por iniciar el proceso de desactivaci&#xf3;n de tu cuenta. Tu nombre visible, tu @nombre de&lt;/p&gt;&#xa;&lt;p&gt;usuario y tu perfil p&#xfa;blico ya no se podr&#xe1;n ver en X.com, X para iOS ni X para Android.&lt;/p&gt;&#xa;&lt;h2&gt;Qu&#xe9; m&#xe1;s debes saber&lt;/h2&gt;&#xa;&lt;p&gt;Si tu cuenta de X se desactiv&#xf3; por error o accidentalmente, tienes un plazo de 30 d&#xed;as para&lt;/p&gt;&#xa;&lt;p&gt;restaurarla despu&#xe9;s de su desactivaci&#xf3;n.&lt;/p&gt;&#xa;&lt;/html&gt;"/>
+        <Property name="text" type="java.lang.String" value="&lt;html&gt; &lt;h2&gt;Esta acci&#xf3;n desactivar&#xe1; tu cuenta&lt;/h2&gt; &lt;p&gt;Est&#xe1;s por iniciar el proceso de desactivaci&#xf3;n de tu cuenta. Tu nombre visible, tu @nombre de&lt;/p&gt; &lt;p&gt;usuario y tu perfil p&#xfa;blico ya no se podr&#xe1;n ver en X.com, X para iOS ni X para Android.&lt;/p&gt; &lt;h2&gt;Qu&#xe9; m&#xe1;s debes saber&lt;/h2&gt; &lt;p&gt;Si tu cuenta de X se desactiv&#xf3; por error o accidentalmente, tienes un plazo de 30 d&#xed;as para&lt;/p&gt; &lt;p&gt;restaurarla despu&#xe9;s de su desactivaci&#xf3;n.&lt;/p&gt; &lt;/html&gt;"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JSeparator" name="jSeparator1">

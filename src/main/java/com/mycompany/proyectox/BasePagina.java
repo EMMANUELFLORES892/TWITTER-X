@@ -150,8 +150,18 @@ public class BasePagina extends javax.swing.JFrame {
         });
 
         BotonMensajes.setText("Mensajes");
+        BotonMensajes.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BotonMensajesActionPerformed(evt);
+            }
+        });
 
         BotonListas.setText("Listas");
+        BotonListas.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BotonListasActionPerformed(evt);
+            }
+        });
 
         BotonPremium.setText("X Premium");
         BotonPremium.addActionListener(new java.awt.event.ActionListener() {
@@ -327,6 +337,18 @@ public class BasePagina extends javax.swing.JFrame {
     private void BotonSiguiendoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonSiguiendoActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_BotonSiguiendoActionPerformed
+
+    private void BotonMensajesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonMensajesActionPerformed
+        //Conectado boton de pagina base a seccion mensajes. -Jerson.
+        new SeccionMensajes().setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_BotonMensajesActionPerformed
+
+    private void BotonListasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonListasActionPerformed
+        //Conectado boton de pagina base a Listas. -Jerson. 
+        new Listas().setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_BotonListasActionPerformed
 
     /**
      * @param args the command line arguments

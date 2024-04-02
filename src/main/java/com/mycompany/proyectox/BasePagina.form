@@ -266,11 +266,17 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Mensajes"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BotonMensajesActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="BotonListas">
       <Properties>
         <Property name="text" type="java.lang.String" value="Listas"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BotonListasActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="BotonPremium">
       <Properties>

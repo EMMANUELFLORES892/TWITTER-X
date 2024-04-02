@@ -52,7 +52,7 @@ public class DesactivarCuenta extends javax.swing.JFrame {
         jLabel2.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
         jLabel2.setText("Imagen");
 
-        jLabel3.setText("<html>\n<h2>Esta acción desactivará tu cuenta</h2>\n<p>Estás por iniciar el proceso de desactivación de tu cuenta. Tu nombre visible, tu @nombre de</p>\n<p>usuario y tu perfil público ya no se podrán ver en X.com, X para iOS ni X para Android.</p>\n<h2>Qué más debes saber</h2>\n<p>Si tu cuenta de X se desactivó por error o accidentalmente, tienes un plazo de 30 días para</p>\n<p>restaurarla después de su desactivación.</p>\n</html>");
+        jLabel3.setText("<html> <h2>Esta acción desactivará tu cuenta</h2> <p>Estás por iniciar el proceso de desactivación de tu cuenta. Tu nombre visible, tu @nombre de</p> <p>usuario y tu perfil público ya no se podrán ver en X.com, X para iOS ni X para Android.</p> <h2>Qué más debes saber</h2> <p>Si tu cuenta de X se desactivó por error o accidentalmente, tienes un plazo de 30 días para</p> <p>restaurarla después de su desactivación.</p> </html>");
 
         jSeparator1.setForeground(new java.awt.Color(153, 153, 153));
 
@@ -151,7 +151,7 @@ public class DesactivarCuenta extends javax.swing.JFrame {
                 .addComponent(jSeparator5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(B_Desactivar, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(32, Short.MAX_VALUE))
+                .addContainerGap(40, Short.MAX_VALUE))
         );
 
         pack();
