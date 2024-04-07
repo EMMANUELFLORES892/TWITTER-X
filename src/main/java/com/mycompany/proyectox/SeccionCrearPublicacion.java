@@ -42,6 +42,12 @@ public class SeccionCrearPublicacion extends javax.swing.JFrame {
         BotonInsertarImagen4 = new javax.swing.JButton();
         BotonInsertarImagen5 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
+        BotonInsertarImagen6 = new javax.swing.JButton();
+        BotonInsertarImagen7 = new javax.swing.JButton();
+        BotonInsertarImagen8 = new javax.swing.JButton();
+        BotonInsertarImagen9 = new javax.swing.JButton();
+        BotonInsertarImagen10 = new javax.swing.JButton();
+        BotonInsertarImagen11 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -173,6 +179,78 @@ public class SeccionCrearPublicacion extends javax.swing.JFrame {
         jLabel1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jLabel1.setOpaque(true);
 
+        BotonInsertarImagen6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes_Publi/img.jpg"))); // NOI18N
+        BotonInsertarImagen6.setBorder(null);
+        BotonInsertarImagen6.setBorderPainted(false);
+        BotonInsertarImagen6.setContentAreaFilled(false);
+        BotonInsertarImagen6.setFocusable(false);
+        BotonInsertarImagen6.setOpaque(true);
+        BotonInsertarImagen6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BotonInsertarImagen6ActionPerformed(evt);
+            }
+        });
+
+        BotonInsertarImagen7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes_Publi/gif.jpg"))); // NOI18N
+        BotonInsertarImagen7.setBorder(null);
+        BotonInsertarImagen7.setBorderPainted(false);
+        BotonInsertarImagen7.setContentAreaFilled(false);
+        BotonInsertarImagen7.setFocusable(false);
+        BotonInsertarImagen7.setOpaque(true);
+        BotonInsertarImagen7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BotonInsertarImagen7ActionPerformed(evt);
+            }
+        });
+
+        BotonInsertarImagen8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes_Publi/mas.jpg"))); // NOI18N
+        BotonInsertarImagen8.setBorder(null);
+        BotonInsertarImagen8.setBorderPainted(false);
+        BotonInsertarImagen8.setContentAreaFilled(false);
+        BotonInsertarImagen8.setFocusable(false);
+        BotonInsertarImagen8.setOpaque(true);
+        BotonInsertarImagen8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BotonInsertarImagen8ActionPerformed(evt);
+            }
+        });
+
+        BotonInsertarImagen9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes_Publi/emote.jpg"))); // NOI18N
+        BotonInsertarImagen9.setBorder(null);
+        BotonInsertarImagen9.setBorderPainted(false);
+        BotonInsertarImagen9.setContentAreaFilled(false);
+        BotonInsertarImagen9.setFocusable(false);
+        BotonInsertarImagen9.setOpaque(true);
+        BotonInsertarImagen9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BotonInsertarImagen9ActionPerformed(evt);
+            }
+        });
+
+        BotonInsertarImagen10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes_Publi/date.jpg"))); // NOI18N
+        BotonInsertarImagen10.setBorder(null);
+        BotonInsertarImagen10.setBorderPainted(false);
+        BotonInsertarImagen10.setContentAreaFilled(false);
+        BotonInsertarImagen10.setFocusable(false);
+        BotonInsertarImagen10.setOpaque(true);
+        BotonInsertarImagen10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BotonInsertarImagen10ActionPerformed(evt);
+            }
+        });
+
+        BotonInsertarImagen11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes_Publi/ubi.jpg"))); // NOI18N
+        BotonInsertarImagen11.setBorder(null);
+        BotonInsertarImagen11.setBorderPainted(false);
+        BotonInsertarImagen11.setContentAreaFilled(false);
+        BotonInsertarImagen11.setFocusable(false);
+        BotonInsertarImagen11.setOpaque(true);
+        BotonInsertarImagen11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BotonInsertarImagen11ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -193,20 +271,35 @@ public class SeccionCrearPublicacion extends javax.swing.JFrame {
                             .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                        .addGap(0, 0, Short.MAX_VALUE)
                                         .addComponent(CheckBoxTodosResponden)
                                         .addGap(178, 178, 178))
                                     .addGroup(layout.createSequentialGroup()
-                                        .addComponent(BotonInsertarImagen, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(BotonInsertarImagen1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(BotonInsertarImagen2, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(BotonInsertarImagen3, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(BotonInsertarImagen4, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(BotonInsertarImagen5, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addGroup(layout.createSequentialGroup()
+                                                .addComponent(BotonInsertarImagen, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                                .addComponent(BotonInsertarImagen1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                                .addComponent(BotonInsertarImagen2, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                                .addComponent(BotonInsertarImagen3, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                                .addComponent(BotonInsertarImagen4, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                                .addComponent(BotonInsertarImagen5, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                            .addGroup(layout.createSequentialGroup()
+                                                .addComponent(BotonInsertarImagen6, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addComponent(BotonInsertarImagen7, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addComponent(BotonInsertarImagen8, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addComponent(BotonInsertarImagen9, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addComponent(BotonInsertarImagen10, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addComponent(BotonInsertarImagen11, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                                 .addComponent(BotonPostear, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                 .addContainerGap(30, Short.MAX_VALUE))
@@ -226,15 +319,24 @@ public class SeccionCrearPublicacion extends javax.swing.JFrame {
                 .addComponent(CheckBoxTodosResponden)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addComponent(BotonInsertarImagen, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(BotonInsertarImagen1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(BotonInsertarImagen2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(BotonInsertarImagen3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(BotonInsertarImagen4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(BotonInsertarImagen5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addComponent(BotonPostear, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(44, Short.MAX_VALUE))
+                    .addComponent(BotonPostear, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(BotonInsertarImagen, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(BotonInsertarImagen1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(BotonInsertarImagen2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(BotonInsertarImagen3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(BotonInsertarImagen4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(BotonInsertarImagen5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(BotonInsertarImagen6)
+                            .addComponent(BotonInsertarImagen7)
+                            .addComponent(BotonInsertarImagen8)
+                            .addComponent(BotonInsertarImagen9)
+                            .addComponent(BotonInsertarImagen10)
+                            .addComponent(BotonInsertarImagen11))))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
@@ -276,6 +378,30 @@ public class SeccionCrearPublicacion extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_BotonInsertarImagen5ActionPerformed
 
+    private void BotonInsertarImagen6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonInsertarImagen6ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_BotonInsertarImagen6ActionPerformed
+
+    private void BotonInsertarImagen7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonInsertarImagen7ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_BotonInsertarImagen7ActionPerformed
+
+    private void BotonInsertarImagen8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonInsertarImagen8ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_BotonInsertarImagen8ActionPerformed
+
+    private void BotonInsertarImagen9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonInsertarImagen9ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_BotonInsertarImagen9ActionPerformed
+
+    private void BotonInsertarImagen10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonInsertarImagen10ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_BotonInsertarImagen10ActionPerformed
+
+    private void BotonInsertarImagen11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonInsertarImagen11ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_BotonInsertarImagen11ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -314,10 +440,16 @@ public class SeccionCrearPublicacion extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton BotonInsertarImagen;
     private javax.swing.JButton BotonInsertarImagen1;
+    private javax.swing.JButton BotonInsertarImagen10;
+    private javax.swing.JButton BotonInsertarImagen11;
     private javax.swing.JButton BotonInsertarImagen2;
     private javax.swing.JButton BotonInsertarImagen3;
     private javax.swing.JButton BotonInsertarImagen4;
     private javax.swing.JButton BotonInsertarImagen5;
+    private javax.swing.JButton BotonInsertarImagen6;
+    private javax.swing.JButton BotonInsertarImagen7;
+    private javax.swing.JButton BotonInsertarImagen8;
+    private javax.swing.JButton BotonInsertarImagen9;
     private javax.swing.JButton BotonPostear;
     private javax.swing.JButton BotonSalir;
     private javax.swing.JCheckBox CheckBoxTodosResponden;
