@@ -4,6 +4,11 @@
  */
 package com.mycompany.proyectox;
 
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author user
@@ -192,6 +197,11 @@ public class BasePagina extends javax.swing.JFrame {
         });
 
         BotonUsuario.setText("Usuario");
+        BotonUsuario.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BotonUsuarioActionPerformed(evt);
+            }
+        });
 
         BotonSiguiendo.setText("Siguiendo");
         BotonSiguiendo.addActionListener(new java.awt.event.ActionListener() {
@@ -332,6 +342,29 @@ public class BasePagina extends javax.swing.JFrame {
 
     private void BotonPremiumActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonPremiumActionPerformed
         // TODO add your handling code here:
+   
+            Conexion objConexion = new Conexion();
+            //objConexion.establecerConexion();
+        try{
+            String sql = "SELECT * FROM usuarios";
+            
+            
+            Statement stmt = objConexion.establecerConexion().createStatement();
+             ResultSet rs = stmt.executeQuery(sql);
+             
+              while (rs.next()) {
+                int id = rs.getInt("id_usuario");
+                String nombre = rs.getString("nombre");
+                
+                JOptionPane.showMessageDialog(null,"ID: " + id + ", Nombre: " + nombre);
+                //System.out.println("ID: " + id + ", Nombre: " + nombre);
+            }
+        } catch(Exception e){
+            JOptionPane.showMessageDialog(null,"Error al procesar los datos: " + e.toString());
+        }
+ 
+       
+        //fin
     }//GEN-LAST:event_BotonPremiumActionPerformed
 
     private void BotonSiguiendoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonSiguiendoActionPerformed
@@ -349,6 +382,10 @@ public class BasePagina extends javax.swing.JFrame {
         new Listas().setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_BotonListasActionPerformed
+
+    private void BotonUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonUsuarioActionPerformed
+       
+    }//GEN-LAST:event_BotonUsuarioActionPerformed
 
     /**
      * @param args the command line arguments
