@@ -364,7 +364,7 @@ public class BasePagina extends javax.swing.JFrame {
         }
  
        
-        //fin
+        
     }//GEN-LAST:event_BotonPremiumActionPerformed
 
     private void BotonSiguiendoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonSiguiendoActionPerformed
