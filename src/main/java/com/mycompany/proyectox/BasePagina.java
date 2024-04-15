@@ -168,7 +168,7 @@ public class BasePagina extends javax.swing.JFrame {
             }
         });
 
-        BotonPremium.setText("X Premium");
+        BotonPremium.setText("Registro");
         BotonPremium.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 BotonPremiumActionPerformed(evt);
@@ -341,8 +341,10 @@ public class BasePagina extends javax.swing.JFrame {
     }//GEN-LAST:event_BotonPerfilActionPerformed
 
     private void BotonPremiumActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonPremiumActionPerformed
-        // TODO add your handling code here:
-   
+        new Registro().setVisible(true);
+        this.setVisible(false);
+        //INICIO DE CENSURA POR EL BIEN DE LA TRAMA
+        /*
             Conexion objConexion = new Conexion();
             //objConexion.establecerConexion();
         try{
@@ -362,7 +364,8 @@ public class BasePagina extends javax.swing.JFrame {
         } catch(Exception e){
             JOptionPane.showMessageDialog(null,"Error al procesar los datos: " + e.toString());
         }
- 
+        */
+        //FIN DE CENSURA POR EL BIEN DE LA TRAMA
        
         
     }//GEN-LAST:event_BotonPremiumActionPerformed
