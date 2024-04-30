@@ -26,85 +26,49 @@ public class Contraseña extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
-        jLabel2 = new javax.swing.JLabel();
-        jTextField2 = new javax.swing.JTextField();
-        jTextField3 = new javax.swing.JTextField();
-        jLabel3 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        jLabel8 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
-        BotonVolverArriba = new javax.swing.JButton();
-        jLabel11 = new javax.swing.JLabel();
-        BotonInicio = new javax.swing.JButton();
-        jLabel12 = new javax.swing.JLabel();
-        BotonExplorar = new javax.swing.JButton();
-        jLabel13 = new javax.swing.JLabel();
-        BotonNotificacion = new javax.swing.JButton();
         jLabel14 = new javax.swing.JLabel();
-        BotonMensajes = new javax.swing.JButton();
         jLabel15 = new javax.swing.JLabel();
+        jLabel16 = new javax.swing.JLabel();
+        jLabel17 = new javax.swing.JLabel();
+        BotonVolverArriba = new javax.swing.JButton();
+        BotonNotificacion = new javax.swing.JButton();
+        BotonMensajes = new javax.swing.JButton();
+        BotonInicio = new javax.swing.JButton();
         BotonListas = new javax.swing.JButton();
         BotonPremium = new javax.swing.JButton();
         BotonPerfil = new javax.swing.JButton();
+        BotonExplorar = new javax.swing.JButton();
         BotonMas = new javax.swing.JButton();
         BotonPost = new javax.swing.JButton();
         BotonUsuario = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel18 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel19 = new javax.swing.JLabel();
+        jLabel13 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
+        jTextField1 = new javax.swing.JTextField();
+        jTextField2 = new javax.swing.JTextField();
+        jLabel6 = new javax.swing.JLabel();
+        jTextField3 = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jLabel1.setFont(new java.awt.Font("Segoe UI Black", 1, 18)); // NOI18N
-        jLabel1.setText("Cambia tu contraseña");
-
-        jTextField1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jTextField1.setForeground(new java.awt.Color(153, 153, 153));
-        jTextField1.setText("Nueva contraseña");
-        jTextField1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField1ActionPerformed(evt);
-            }
-        });
-
-        jLabel2.setForeground(new java.awt.Color(51, 153, 255));
-        jLabel2.setText("¿Olvidaste tu contraseña?");
-
-        jTextField2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jTextField2.setForeground(new java.awt.Color(153, 153, 153));
-        jTextField2.setText("Contraseña actual");
-
-        jTextField3.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jTextField3.setForeground(new java.awt.Color(153, 153, 153));
-        jTextField3.setText("Confirmar contraseña");
-        jTextField3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField3ActionPerformed(evt);
-            }
-        });
-
-        jLabel3.setForeground(new java.awt.Color(153, 153, 153));
-        jLabel3.setText("<html>\n<p>Si cambias tu contraseña, se cerrarán todas tus sesiones activas de X, excepto la</p> \n<p>que estás usando en este momento. La <font color= \"rgb(51, 153, 255)\">2 aplicaciones</font> que tiene acceso a tu </p>\n<p>cuenta no se verá afectada. <font color= \"rgb(51, 153, 255)\">Más información.</font></p>\n</html>");
-
-        jButton1.setBackground(new java.awt.Color(51, 204, 255));
-        jButton1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(255, 255, 255));
-        jButton1.setText("Guardar");
-        jButton1.setBorder(null);
-        jButton1.setBorderPainted(false);
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
-            }
-        });
-
-        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes_Base/mas.jpg"))); // NOI18N
-
-        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes_Base/perfil.jpg"))); // NOI18N
-
         jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes_Base/premium.jpg"))); // NOI18N
 
-        BotonVolverArriba.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes_Base/LogoX.jpg"))); // NOI18N
+        jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes_Base/explorar.jpg"))); // NOI18N
+
+        jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes_Base/inicio.jpg"))); // NOI18N
+
+        jLabel16.setText("jLabel14");
+
+        jLabel17.setText("jLabel15");
+
+        BotonVolverArriba.setText("logo");
         BotonVolverArriba.setBorder(null);
         BotonVolverArriba.setBorderPainted(false);
         BotonVolverArriba.setContentAreaFilled(false);
@@ -115,40 +79,6 @@ public class Contraseña extends javax.swing.JFrame {
                 BotonVolverArribaActionPerformed(evt);
             }
         });
-
-        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes_Base/listas.jpg"))); // NOI18N
-
-        BotonInicio.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        BotonInicio.setText("Inicio");
-        BotonInicio.setBorder(null);
-        BotonInicio.setBorderPainted(false);
-        BotonInicio.setContentAreaFilled(false);
-        BotonInicio.setFocusable(false);
-        BotonInicio.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        BotonInicio.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
-        BotonInicio.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BotonInicioActionPerformed(evt);
-            }
-        });
-
-        jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes_Base/noti.jpg"))); // NOI18N
-
-        BotonExplorar.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        BotonExplorar.setText("Explorar");
-        BotonExplorar.setBorder(null);
-        BotonExplorar.setBorderPainted(false);
-        BotonExplorar.setContentAreaFilled(false);
-        BotonExplorar.setFocusable(false);
-        BotonExplorar.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        BotonExplorar.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
-        BotonExplorar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BotonExplorarActionPerformed(evt);
-            }
-        });
-
-        jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes_Base/mensaje.jpg"))); // NOI18N
 
         BotonNotificacion.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         BotonNotificacion.setText("Notificaciones");
@@ -164,8 +94,6 @@ public class Contraseña extends javax.swing.JFrame {
             }
         });
 
-        jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes_Base/explorar.jpg"))); // NOI18N
-
         BotonMensajes.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         BotonMensajes.setText("Mensajes");
         BotonMensajes.setBorder(null);
@@ -180,7 +108,19 @@ public class Contraseña extends javax.swing.JFrame {
             }
         });
 
-        jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes_Base/inicio.jpg"))); // NOI18N
+        BotonInicio.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        BotonInicio.setText("Inicio");
+        BotonInicio.setBorder(null);
+        BotonInicio.setBorderPainted(false);
+        BotonInicio.setContentAreaFilled(false);
+        BotonInicio.setFocusable(false);
+        BotonInicio.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        BotonInicio.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
+        BotonInicio.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BotonInicioActionPerformed(evt);
+            }
+        });
 
         BotonListas.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         BotonListas.setText("Listas");
@@ -224,6 +164,20 @@ public class Contraseña extends javax.swing.JFrame {
             }
         });
 
+        BotonExplorar.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        BotonExplorar.setText("Explorar");
+        BotonExplorar.setBorder(null);
+        BotonExplorar.setBorderPainted(false);
+        BotonExplorar.setContentAreaFilled(false);
+        BotonExplorar.setFocusable(false);
+        BotonExplorar.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        BotonExplorar.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
+        BotonExplorar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BotonExplorarActionPerformed(evt);
+            }
+        });
+
         BotonMas.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         BotonMas.setText("Mostrar mas");
         BotonMas.setBorder(null);
@@ -261,9 +215,59 @@ public class Contraseña extends javax.swing.JFrame {
         BotonUsuario.setFocusable(false);
         BotonUsuario.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         BotonUsuario.setOpaque(true);
-        BotonUsuario.addActionListener(new java.awt.event.ActionListener() {
+
+        jLabel1.setText("jLabel1");
+
+        jLabel4.setText("jLabel4");
+
+        jLabel18.setText("jLabel5");
+
+        jLabel2.setText("jLabel2");
+
+        jLabel19.setText("jLabel7");
+
+        jLabel13.setText("jLabel13");
+
+        jLabel5.setFont(new java.awt.Font("Segoe UI Black", 1, 18)); // NOI18N
+        jLabel5.setText("Cambia tu contraseña");
+
+        jLabel3.setForeground(new java.awt.Color(153, 153, 153));
+        jLabel3.setText("<html>\n<p>Si cambias tu contraseña, se cerrarán todas tus sesiones activas de X, excepto la</p> \n<p>que estás usando en este momento. La <font color= \"rgb(51, 153, 255)\">2 aplicaciones</font> que tiene acceso a tu </p>\n<p>cuenta no se verá afectada. <font color= \"rgb(51, 153, 255)\">Más información.</font></p>\n</html>");
+
+        jButton1.setBackground(new java.awt.Color(51, 204, 255));
+        jButton1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(255, 255, 255));
+        jButton1.setText("Guardar");
+        jButton1.setBorder(null);
+        jButton1.setBorderPainted(false);
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BotonUsuarioActionPerformed(evt);
+                jButton1ActionPerformed(evt);
+            }
+        });
+
+        jTextField1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jTextField1.setForeground(new java.awt.Color(153, 153, 153));
+        jTextField1.setText("Nueva contraseña");
+        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField1ActionPerformed(evt);
+            }
+        });
+
+        jTextField2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jTextField2.setForeground(new java.awt.Color(153, 153, 153));
+        jTextField2.setText("Contraseña actual");
+
+        jLabel6.setForeground(new java.awt.Color(51, 153, 255));
+        jLabel6.setText("¿Olvidaste tu contraseña?");
+
+        jTextField3.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jTextField3.setForeground(new java.awt.Color(153, 153, 153));
+        jTextField3.setText("Confirmar contraseña");
+        jTextField3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField3ActionPerformed(evt);
             }
         });
 
@@ -272,153 +276,138 @@ public class Contraseña extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(85, 85, 85)
+                .addGap(80, 80, 80)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel10)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addComponent(jLabel15, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jLabel14, javax.swing.GroupLayout.Alignment.TRAILING)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addGroup(layout.createSequentialGroup()
-                                    .addGap(10, 10, 10)
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                            .addComponent(jLabel8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                            .addComponent(jLabel9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                            .addComponent(jLabel10, javax.swing.GroupLayout.Alignment.TRAILING)
-                                            .addComponent(jLabel11, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                        .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(jLabel13, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                            .addComponent(jLabel15, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                            .addComponent(jLabel14, javax.swing.GroupLayout.Alignment.TRAILING))))
-                                .addComponent(BotonVolverArriba, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(BotonPremium, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addGroup(layout.createSequentialGroup()
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(BotonInicio)
-                                        .addComponent(BotonExplorar)
-                                        .addComponent(BotonNotificacion)
-                                        .addComponent(BotonMensajes)
-                                        .addComponent(BotonListas)
-                                        .addComponent(BotonPerfil)
-                                        .addComponent(BotonMas))
-                                    .addGap(0, 0, Short.MAX_VALUE))))
-                        .addGroup(layout.createSequentialGroup()
-                            .addGap(0, 0, Short.MAX_VALUE)
-                            .addComponent(BotonPost, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 21, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(BotonUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(119, 119, 119)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(BotonVolverArriba, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(jLabel1)
+                                .addComponent(jLabel4))
+                            .addComponent(jLabel18)
+                            .addComponent(jLabel19)
+                            .addComponent(jLabel17, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(jLabel13, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(jLabel16, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                                    .addComponent(jLabel2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(BotonInicio)
+                            .addComponent(BotonExplorar)
+                            .addComponent(BotonNotificacion)
+                            .addComponent(BotonMensajes)
+                            .addComponent(BotonListas)
+                            .addComponent(BotonPerfil)
+                            .addComponent(BotonMas)
+                            .addComponent(BotonPremium, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(BotonUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(BotonPost, javax.swing.GroupLayout.PREFERRED_SIZE, 148, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(16, 16, 16)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 140, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jButton1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addGap(35, 35, 35)
-                                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 215, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 413, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 413, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 413, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(19, 19, 19))
-                            .addComponent(jLabel2)
+                                .addGap(35, 35, 35)
+                                .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 215, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 413, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 413, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 413, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel6)
                             .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 432, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(26, 26, 26)))
-                .addGap(197, 197, 197))
+                .addGap(173, 173, 173))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(BotonVolverArriba, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGap(57, 57, 57)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addComponent(jLabel15, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(38, 38, 38))
+                            .addComponent(jLabel14, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(129, 129, 129)
+                        .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(4, 4, 4)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(BotonVolverArriba, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(BotonInicio, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(layout.createSequentialGroup()
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                            .addComponent(jLabel15, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                            .addComponent(BotonInicio, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                         .addComponent(BotonExplorar, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addComponent(jLabel14, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGap(6, 6, 6)
+                                        .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(BotonNotificacion, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(BotonMensajes, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jLabel13, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel11, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(BotonListas, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(8, 8, 8)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(BotonPremium, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(9, 9, 9)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(BotonPerfil, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(5, 5, 5)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(BotonMas, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(8, 8, 8)
-                        .addComponent(BotonPost, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel2)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(12, 12, 12)
-                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(56, 56, 56)
-                .addComponent(BotonUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(60, Short.MAX_VALUE))
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(BotonNotificacion, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(jLabel17, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(6, 6, 6)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(jLabel18, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(BotonMensajes, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(BotonListas, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(jLabel19, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(6, 6, 6)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(BotonPremium, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(6, 6, 6)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(BotonPerfil, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(jLabel16, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(6, 6, 6)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(BotonMas, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(jLabel13, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jLabel6)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(12, 12, 12)
+                                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(33, 33, 33)
+                        .addComponent(BotonPost, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(44, 44, 44)
+                        .addComponent(BotonUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(37, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField1ActionPerformed
-
-    private void jTextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField3ActionPerformed
-
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
-
     private void BotonVolverArribaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonVolverArribaActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_BotonVolverArribaActionPerformed
-
-    private void BotonInicioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonInicioActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_BotonInicioActionPerformed
-
-    private void BotonExplorarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonExplorarActionPerformed
-        //Hasta ahora este boton muestra la seccion de explorar.-Jerson.
-        new PaginaExplorar().setVisible(true);
-        this.setVisible(false);
-    }//GEN-LAST:event_BotonExplorarActionPerformed
 
     private void BotonNotificacionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonNotificacionActionPerformed
         //Hasta ahora este boton muestra la seccion de notificaciones.-Jerson.
@@ -431,6 +420,10 @@ public class Contraseña extends javax.swing.JFrame {
         new SeccionMensajes().setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_BotonMensajesActionPerformed
+
+    private void BotonInicioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonInicioActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_BotonInicioActionPerformed
 
     private void BotonListasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonListasActionPerformed
         //Conectado boton de pagina base a Listas. -Jerson.
@@ -447,6 +440,12 @@ public class Contraseña extends javax.swing.JFrame {
         this.setVisible(false);
     }//GEN-LAST:event_BotonPerfilActionPerformed
 
+    private void BotonExplorarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonExplorarActionPerformed
+        //Hasta ahora este boton muestra la seccion de explorar.-Jerson.
+        new PaginaExplorar().setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_BotonExplorarActionPerformed
+
     private void BotonMasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonMasActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_BotonMasActionPerformed
@@ -455,9 +454,17 @@ public class Contraseña extends javax.swing.JFrame {
         new SeccionCrearPublicacion().setVisible(true);
     }//GEN-LAST:event_BotonPostActionPerformed
 
-    private void BotonUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonUsuarioActionPerformed
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_BotonUsuarioActionPerformed
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField1ActionPerformed
+
+    private void jTextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField3ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -509,15 +516,18 @@ public class Contraseña extends javax.swing.JFrame {
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField2;
     private javax.swing.JTextField jTextField3;

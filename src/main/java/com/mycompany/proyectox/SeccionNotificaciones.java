@@ -34,25 +34,9 @@ public class SeccionNotificaciones extends javax.swing.JFrame {
         TextoNotificacion1 = new javax.swing.JTextField();
         BotonNotificacionEjemplo2 = new javax.swing.JButton();
         TextoNotificacion2 = new javax.swing.JTextField();
-        jLabel8 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
-        BotonExplorar = new javax.swing.JButton();
-        jLabel10 = new javax.swing.JLabel();
-        BotonNotificacion = new javax.swing.JButton();
         jLabel11 = new javax.swing.JLabel();
-        BotonMensajes = new javax.swing.JButton();
         jLabel12 = new javax.swing.JLabel();
-        BotonListas = new javax.swing.JButton();
-        BotonPremium = new javax.swing.JButton();
-        BotonPerfil = new javax.swing.JButton();
-        BotonMas = new javax.swing.JButton();
-        BotonPost = new javax.swing.JButton();
-        BotonUsuario = new javax.swing.JButton();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
-        BotonVolverArriba = new javax.swing.JButton();
-        BotonInicio = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
         BotonCuentaRecom2 = new javax.swing.JButton();
         BotonCuentaRecom3 = new javax.swing.JButton();
@@ -66,6 +50,25 @@ public class SeccionNotificaciones extends javax.swing.JFrame {
         BotonCuentaRecom1 = new javax.swing.JButton();
         jScrollPane3 = new javax.swing.JScrollPane();
         TextBuscar = new javax.swing.JTextPane();
+        jLabel15 = new javax.swing.JLabel();
+        BotonVolverArriba = new javax.swing.JButton();
+        BotonNotificacion = new javax.swing.JButton();
+        BotonMensajes = new javax.swing.JButton();
+        BotonInicio = new javax.swing.JButton();
+        BotonListas = new javax.swing.JButton();
+        BotonPremium = new javax.swing.JButton();
+        BotonPerfil = new javax.swing.JButton();
+        BotonExplorar = new javax.swing.JButton();
+        BotonMas = new javax.swing.JButton();
+        BotonPost = new javax.swing.JButton();
+        BotonUsuario = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel13 = new javax.swing.JLabel();
+        jLabel14 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -95,169 +98,11 @@ public class SeccionNotificaciones extends javax.swing.JFrame {
             }
         });
 
-        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes_Base/listas.jpg"))); // NOI18N
-
-        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes_Base/noti.jpg"))); // NOI18N
-
-        BotonExplorar.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        BotonExplorar.setText("Explorar");
-        BotonExplorar.setBorder(null);
-        BotonExplorar.setBorderPainted(false);
-        BotonExplorar.setContentAreaFilled(false);
-        BotonExplorar.setFocusable(false);
-        BotonExplorar.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        BotonExplorar.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
-        BotonExplorar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BotonExplorarActionPerformed(evt);
-            }
-        });
-
-        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes_Base/mensaje.jpg"))); // NOI18N
-
-        BotonNotificacion.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        BotonNotificacion.setText("Notificaciones");
-        BotonNotificacion.setBorder(null);
-        BotonNotificacion.setBorderPainted(false);
-        BotonNotificacion.setContentAreaFilled(false);
-        BotonNotificacion.setFocusable(false);
-        BotonNotificacion.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        BotonNotificacion.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
-        BotonNotificacion.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BotonNotificacionActionPerformed(evt);
-            }
-        });
-
         jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes_Base/explorar.jpg"))); // NOI18N
-
-        BotonMensajes.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        BotonMensajes.setText("Mensajes");
-        BotonMensajes.setBorder(null);
-        BotonMensajes.setBorderPainted(false);
-        BotonMensajes.setContentAreaFilled(false);
-        BotonMensajes.setFocusable(false);
-        BotonMensajes.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        BotonMensajes.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
-        BotonMensajes.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BotonMensajesActionPerformed(evt);
-            }
-        });
 
         jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes_Base/inicio.jpg"))); // NOI18N
 
-        BotonListas.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        BotonListas.setText("Listas");
-        BotonListas.setBorder(null);
-        BotonListas.setBorderPainted(false);
-        BotonListas.setContentAreaFilled(false);
-        BotonListas.setFocusable(false);
-        BotonListas.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        BotonListas.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
-        BotonListas.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BotonListasActionPerformed(evt);
-            }
-        });
-
-        BotonPremium.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        BotonPremium.setText("X Premium");
-        BotonPremium.setBorder(null);
-        BotonPremium.setBorderPainted(false);
-        BotonPremium.setContentAreaFilled(false);
-        BotonPremium.setFocusable(false);
-        BotonPremium.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        BotonPremium.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
-        BotonPremium.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BotonPremiumActionPerformed(evt);
-            }
-        });
-
-        BotonPerfil.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        BotonPerfil.setText("Perfil");
-        BotonPerfil.setBorder(null);
-        BotonPerfil.setBorderPainted(false);
-        BotonPerfil.setContentAreaFilled(false);
-        BotonPerfil.setFocusable(false);
-        BotonPerfil.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        BotonPerfil.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
-        BotonPerfil.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BotonPerfilActionPerformed(evt);
-            }
-        });
-
-        BotonMas.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        BotonMas.setText("Mostrar mas");
-        BotonMas.setBorder(null);
-        BotonMas.setBorderPainted(false);
-        BotonMas.setContentAreaFilled(false);
-        BotonMas.setFocusable(false);
-        BotonMas.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        BotonMas.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
-        BotonMas.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BotonMasActionPerformed(evt);
-            }
-        });
-
-        BotonPost.setBackground(new java.awt.Color(0, 153, 255));
-        BotonPost.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        BotonPost.setForeground(new java.awt.Color(255, 255, 255));
-        BotonPost.setText("Postear");
-        BotonPost.setBorder(null);
-        BotonPost.setBorderPainted(false);
-        BotonPost.setContentAreaFilled(false);
-        BotonPost.setFocusable(false);
-        BotonPost.setOpaque(true);
-        BotonPost.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BotonPostActionPerformed(evt);
-            }
-        });
-
-        BotonUsuario.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        BotonUsuario.setText("Usuario");
-        BotonUsuario.setBorder(null);
-        BotonUsuario.setBorderPainted(false);
-        BotonUsuario.setContentAreaFilled(false);
-        BotonUsuario.setFocusable(false);
-        BotonUsuario.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        BotonUsuario.setOpaque(true);
-
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes_Base/mas.jpg"))); // NOI18N
-
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes_Base/perfil.jpg"))); // NOI18N
-
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes_Base/premium.jpg"))); // NOI18N
-
-        BotonVolverArriba.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes_Base/LogoX.jpg"))); // NOI18N
-        BotonVolverArriba.setBorder(null);
-        BotonVolverArriba.setBorderPainted(false);
-        BotonVolverArriba.setContentAreaFilled(false);
-        BotonVolverArriba.setFocusable(false);
-        BotonVolverArriba.setOpaque(true);
-        BotonVolverArriba.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BotonVolverArribaActionPerformed(evt);
-            }
-        });
-
-        BotonInicio.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        BotonInicio.setText("Inicio");
-        BotonInicio.setBorder(null);
-        BotonInicio.setBorderPainted(false);
-        BotonInicio.setContentAreaFilled(false);
-        BotonInicio.setFocusable(false);
-        BotonInicio.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        BotonInicio.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
-        BotonInicio.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BotonInicioActionPerformed(evt);
-            }
-        });
 
         BotonCuentaRecom2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         BotonCuentaRecom2.setText("Cuenta recom 2");
@@ -393,134 +238,309 @@ public class SeccionNotificaciones extends javax.swing.JFrame {
         TextBuscar.setFocusable(false);
         jScrollPane3.setViewportView(TextBuscar);
 
+        jLabel15.setText("jLabel15");
+
+        BotonVolverArriba.setText("logo");
+        BotonVolverArriba.setBorder(null);
+        BotonVolverArriba.setBorderPainted(false);
+        BotonVolverArriba.setContentAreaFilled(false);
+        BotonVolverArriba.setFocusable(false);
+        BotonVolverArriba.setOpaque(true);
+        BotonVolverArriba.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BotonVolverArribaActionPerformed(evt);
+            }
+        });
+
+        BotonNotificacion.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        BotonNotificacion.setText("Notificaciones");
+        BotonNotificacion.setBorder(null);
+        BotonNotificacion.setBorderPainted(false);
+        BotonNotificacion.setContentAreaFilled(false);
+        BotonNotificacion.setFocusable(false);
+        BotonNotificacion.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        BotonNotificacion.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
+        BotonNotificacion.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BotonNotificacionActionPerformed(evt);
+            }
+        });
+
+        BotonMensajes.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        BotonMensajes.setText("Mensajes");
+        BotonMensajes.setBorder(null);
+        BotonMensajes.setBorderPainted(false);
+        BotonMensajes.setContentAreaFilled(false);
+        BotonMensajes.setFocusable(false);
+        BotonMensajes.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        BotonMensajes.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
+        BotonMensajes.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BotonMensajesActionPerformed(evt);
+            }
+        });
+
+        BotonInicio.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        BotonInicio.setText("Inicio");
+        BotonInicio.setBorder(null);
+        BotonInicio.setBorderPainted(false);
+        BotonInicio.setContentAreaFilled(false);
+        BotonInicio.setFocusable(false);
+        BotonInicio.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        BotonInicio.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
+        BotonInicio.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BotonInicioActionPerformed(evt);
+            }
+        });
+
+        BotonListas.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        BotonListas.setText("Listas");
+        BotonListas.setBorder(null);
+        BotonListas.setBorderPainted(false);
+        BotonListas.setContentAreaFilled(false);
+        BotonListas.setFocusable(false);
+        BotonListas.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        BotonListas.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
+        BotonListas.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BotonListasActionPerformed(evt);
+            }
+        });
+
+        BotonPremium.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        BotonPremium.setText("X Premium");
+        BotonPremium.setBorder(null);
+        BotonPremium.setBorderPainted(false);
+        BotonPremium.setContentAreaFilled(false);
+        BotonPremium.setFocusable(false);
+        BotonPremium.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        BotonPremium.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
+        BotonPremium.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BotonPremiumActionPerformed(evt);
+            }
+        });
+
+        BotonPerfil.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        BotonPerfil.setText("Perfil");
+        BotonPerfil.setBorder(null);
+        BotonPerfil.setBorderPainted(false);
+        BotonPerfil.setContentAreaFilled(false);
+        BotonPerfil.setFocusable(false);
+        BotonPerfil.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        BotonPerfil.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
+        BotonPerfil.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BotonPerfilActionPerformed(evt);
+            }
+        });
+
+        BotonExplorar.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        BotonExplorar.setText("Explorar");
+        BotonExplorar.setBorder(null);
+        BotonExplorar.setBorderPainted(false);
+        BotonExplorar.setContentAreaFilled(false);
+        BotonExplorar.setFocusable(false);
+        BotonExplorar.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        BotonExplorar.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
+        BotonExplorar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BotonExplorarActionPerformed(evt);
+            }
+        });
+
+        BotonMas.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        BotonMas.setText("Mostrar mas");
+        BotonMas.setBorder(null);
+        BotonMas.setBorderPainted(false);
+        BotonMas.setContentAreaFilled(false);
+        BotonMas.setFocusable(false);
+        BotonMas.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        BotonMas.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
+        BotonMas.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BotonMasActionPerformed(evt);
+            }
+        });
+
+        BotonPost.setBackground(new java.awt.Color(0, 153, 255));
+        BotonPost.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        BotonPost.setForeground(new java.awt.Color(255, 255, 255));
+        BotonPost.setText("Postear");
+        BotonPost.setBorder(null);
+        BotonPost.setBorderPainted(false);
+        BotonPost.setContentAreaFilled(false);
+        BotonPost.setFocusable(false);
+        BotonPost.setOpaque(true);
+        BotonPost.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BotonPostActionPerformed(evt);
+            }
+        });
+
+        BotonUsuario.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        BotonUsuario.setText("Usuario");
+        BotonUsuario.setBorder(null);
+        BotonUsuario.setBorderPainted(false);
+        BotonUsuario.setContentAreaFilled(false);
+        BotonUsuario.setFocusable(false);
+        BotonUsuario.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        BotonUsuario.setOpaque(true);
+
+        jLabel1.setText("jLabel1");
+
+        jLabel4.setText("jLabel4");
+
+        jLabel5.setText("jLabel5");
+
+        jLabel2.setText("jLabel2");
+
+        jLabel7.setText("jLabel7");
+
+        jLabel13.setText("jLabel13");
+
+        jLabel14.setText("jLabel14");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(81, 81, 81)
+                .addGap(84, 84, 84)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel6)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addComponent(jLabel12, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jLabel11, javax.swing.GroupLayout.Alignment.TRAILING)))
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(10, 10, 10)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                        .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addComponent(jLabel6, javax.swing.GroupLayout.Alignment.TRAILING)
-                                        .addComponent(jLabel8, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                        .addComponent(jLabel12, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addComponent(jLabel11, javax.swing.GroupLayout.Alignment.TRAILING))))
-                            .addComponent(BotonVolverArriba, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGap(4, 4, 4)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(BotonUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(BotonPost, javax.swing.GroupLayout.PREFERRED_SIZE, 148, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(BotonVolverArriba, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(jLabel1)
+                                .addComponent(jLabel4))
+                            .addComponent(jLabel5)
+                            .addComponent(jLabel7)
+                            .addComponent(jLabel15, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(jLabel13, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(jLabel14, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                                    .addComponent(jLabel2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(BotonInicio)
                             .addComponent(BotonExplorar)
                             .addComponent(BotonNotificacion)
                             .addComponent(BotonMensajes)
                             .addComponent(BotonListas)
-                            .addComponent(BotonPremium, javax.swing.GroupLayout.DEFAULT_SIZE, 123, Short.MAX_VALUE)
                             .addComponent(BotonPerfil)
-                            .addComponent(BotonMas)))
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addComponent(BotonUsuario, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(BotonPost, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                        .addComponent(TextoNotificacion2, javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(BotonNotificacionEjemplo1, javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(BotonNotificacionEjemplo2, javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(TextoNotificacion1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 501, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(BotonMas)
+                            .addComponent(BotonPremium, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(BotonNotificacionEjemplo1)
+                    .addComponent(BotonNotificacionEjemplo2)
+                    .addComponent(LabelSecccionNotificaciones)
                     .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(LabelSecccionNotificaciones)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(BotonTodoNotificaciones)
-                                .addGap(63, 63, 63)
-                                .addComponent(BotonVerificadoNotificaciones)
-                                .addGap(177, 177, 177)
-                                .addComponent(BotonMencionesNotificaciones)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 18, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 27, Short.MAX_VALUE)
+                        .addComponent(BotonTodoNotificaciones)
+                        .addGap(63, 63, 63)
+                        .addComponent(BotonVerificadoNotificaciones)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 146, Short.MAX_VALUE)
+                        .addComponent(BotonMencionesNotificaciones))
+                    .addComponent(TextoNotificacion2)
+                    .addComponent(TextoNotificacion1))
+                .addGap(32, 32, 32)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jScrollPane3)
                     .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(42, 42, 42))
+                .addGap(65, 65, 65))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(BotonVolverArriba, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(51, 51, 51)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(jLabel12, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(BotonInicio, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(BotonExplorar, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(BotonNotificacion, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(BotonMensajes, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 16, Short.MAX_VALUE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(BotonListas, javax.swing.GroupLayout.DEFAULT_SIZE, 52, Short.MAX_VALUE)
-                    .addComponent(jLabel8, javax.swing.GroupLayout.DEFAULT_SIZE, 52, Short.MAX_VALUE))
-                .addGap(7, 7, 7)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, 52, Short.MAX_VALUE)
-                    .addComponent(BotonPremium, javax.swing.GroupLayout.DEFAULT_SIZE, 52, Short.MAX_VALUE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(BotonPerfil, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 19, Short.MAX_VALUE))
-                    .addComponent(BotonMas, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(BotonPost, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(60, 60, 60)
-                .addComponent(BotonUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(38, 38, 38))
+                    .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, 216, Short.MAX_VALUE)
+                .addGap(226, 226, 226))
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(12, 12, 12)
-                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(BotonVolverArriba, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(BotonInicio, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(BotonExplorar, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(6, 6, 6)
+                                .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(BotonNotificacion, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jLabel15, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(6, 6, 6)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(BotonMensajes, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(BotonListas, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(6, 6, 6)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(BotonPremium, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(6, 6, 6)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(BotonPerfil, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jLabel14, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(6, 6, 6)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(BotonMas, javax.swing.GroupLayout.DEFAULT_SIZE, 35, Short.MAX_VALUE)
+                            .addComponent(jLabel13, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(BotonPost, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(46, 46, 46)
+                        .addComponent(BotonUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(36, 36, 36))
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(LabelSecccionNotificaciones)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(BotonTodoNotificaciones)
-                            .addComponent(BotonVerificadoNotificaciones)
-                            .addComponent(BotonMencionesNotificaciones))
-                        .addGap(18, 18, 18)
-                        .addComponent(BotonNotificacionEjemplo1)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(TextoNotificacion1, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(BotonNotificacionEjemplo2)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(TextoNotificacion2, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(12, 12, 12)
+                                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(LabelSecccionNotificaciones)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(BotonTodoNotificaciones)
+                                    .addComponent(BotonVerificadoNotificaciones)
+                                    .addComponent(BotonMencionesNotificaciones))
+                                .addGap(18, 18, 18)
+                                .addComponent(BotonNotificacionEjemplo1)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(TextoNotificacion1, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(BotonNotificacionEjemplo2)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(TextoNotificacion2, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addContainerGap(77, Short.MAX_VALUE))))
         );
 
         pack();
@@ -534,12 +554,9 @@ public class SeccionNotificaciones extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_TextoNotificacion2ActionPerformed
 
-    private void BotonExplorarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonExplorarActionPerformed
-        //Hasta ahora este boton muestra la seccion de explorar.-Jerson.
-        new PaginaExplorar().setVisible(true);
-        this.setVisible(false);
-
-    }//GEN-LAST:event_BotonExplorarActionPerformed
+    private void BotonVolverArribaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonVolverArribaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_BotonVolverArribaActionPerformed
 
     private void BotonNotificacionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonNotificacionActionPerformed
         //Hasta ahora este boton muestra la seccion de notificaciones.-Jerson.
@@ -552,6 +569,10 @@ public class SeccionNotificaciones extends javax.swing.JFrame {
         new SeccionMensajes().setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_BotonMensajesActionPerformed
+
+    private void BotonInicioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonInicioActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_BotonInicioActionPerformed
 
     private void BotonListasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonListasActionPerformed
         //Conectado boton de pagina base a Listas. -Jerson.
@@ -568,6 +589,12 @@ public class SeccionNotificaciones extends javax.swing.JFrame {
         this.setVisible(false);
     }//GEN-LAST:event_BotonPerfilActionPerformed
 
+    private void BotonExplorarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonExplorarActionPerformed
+        //Hasta ahora este boton muestra la seccion de explorar.-Jerson.
+        new PaginaExplorar().setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_BotonExplorarActionPerformed
+
     private void BotonMasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonMasActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_BotonMasActionPerformed
@@ -575,14 +602,6 @@ public class SeccionNotificaciones extends javax.swing.JFrame {
     private void BotonPostActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonPostActionPerformed
         new SeccionCrearPublicacion().setVisible(true);
     }//GEN-LAST:event_BotonPostActionPerformed
-
-    private void BotonVolverArribaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonVolverArribaActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_BotonVolverArribaActionPerformed
-
-    private void BotonInicioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonInicioActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_BotonInicioActionPerformed
 
     /**
      * @param args the command line arguments
@@ -650,14 +669,17 @@ public class SeccionNotificaciones extends javax.swing.JFrame {
     private javax.swing.JTextPane TextBuscar;
     private javax.swing.JTextField TextoNotificacion1;
     private javax.swing.JTextField TextoNotificacion2;
-    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
+    private javax.swing.JLabel jLabel7;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane3;
     // End of variables declaration//GEN-END:variables
