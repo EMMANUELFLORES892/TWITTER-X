@@ -1,8 +1,8 @@
 
 package com.mycompany.proyectox;
 
-import SQL.Conexion;
 import java.sql.Connection;
+import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.sql.Statement;
@@ -126,13 +126,44 @@ public class Registro extends javax.swing.JFrame {
     }//GEN-LAST:event_txtRegistroNombreActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        String url = "jdbc:ucanaccess://C://Users//PC//Documentos//NetBeansProjects//TWITTER-X//X.accdb";
+        String usuario = ""; // Usuario de la base de datos, si es necesario
+        String contraseña = ""; // Contraseña de la base de datos, si es necesario
+
+        
         String userHandle = txtRegistroUserHandle.getText();
         String email = txtRegistroEmail.getText();
         String nombre = txtRegistroNombre.getText();
         String apellido = txtRegistroApellido.getText();
         String telefono = txtRegistroTelefono.getText();
         
-        try{
+         try (Connection con = DriverManager.getConnection(url, usuario, contraseña)) {
+            // Sentencia SQL para insertar datos en la tabla "usuarios"
+            String sql = "INSERT INTO usuarios (user_handle, email, nombre, apellido, telefono) VALUES (?, ?, ?, ?, ?)";
+            
+            try (PreparedStatement pstmt = con.prepareStatement(sql)) {
+                // Establecer los valores de los parámetros en la sentencia SQL
+                pstmt.setString(1, userHandle);
+                pstmt.setString(2, email);
+                pstmt.setString(3, nombre);
+                pstmt.setString(4, apellido);
+                pstmt.setString(5, telefono);
+                
+                // Ejecutar la sentencia SQL
+                int filasInsertadas = pstmt.executeUpdate();
+                
+                // Comprobar si se insertaron filas
+                if (filasInsertadas > 0) {
+                    System.out.println("Se insertaron correctamente los datos en la tabla usuarios.");
+                } else {
+                    System.out.println("No se insertaron datos en la tabla usuarios.");
+                }
+            }
+        }catch(SQLException e){
+            JOptionPane.showMessageDialog(null,e.toString());
+        }
+        
+        /*try{
             Connection con = Conexion.getConnection();
             PreparedStatement ps = con.prepareStatement("INSERT INTO usuarios (user_handle, email,nombre,apellido,telefono) VALUES(?,?,?,?,?)");
             ps.setString(1,userHandle);
@@ -145,7 +176,7 @@ public class Registro extends javax.swing.JFrame {
         }
         catch(SQLException e){
             JOptionPane.showMessageDialog(null,e.toString());
-        }
+        }*/
                 
         
     }//GEN-LAST:event_jButton1ActionPerformed

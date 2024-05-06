@@ -4,16 +4,30 @@
 
 package com.mycompany.proyectox;
 
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+
+
 /**
  *
  * @author user
  */
 public class ProyectoX {
 
-    public static void main(String[] args) {
-        System.out.println("Main");
-        
-        
+    public static void main(String[] args){
+        try{
+            String url = "jdbc:ucanaccess://C://Users//PC//Documentos//NetBeansProjects//TWITTER-X//X.accdb";
+            Connection conn = DriverManager.getConnection(url);
+            /*String sql = "SELECT * FROM "
+            PreparedStatement pat = conn.prepareStatement(sql);
+            
+            
+            
+            */
+        } catch(Exception e){
+            System.out.print(e);
+        }
     }
 }
 //https://www.youtube.com/watch?v=qHQXUrrubcs -> Como hacer y subir cosas al repositotio
