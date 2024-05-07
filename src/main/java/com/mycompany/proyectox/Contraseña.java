@@ -4,6 +4,8 @@
  */
 package com.mycompany.proyectox;
 
+import java.awt.Color;
+
 /**
  *
  * @author CCCU
@@ -15,6 +17,7 @@ public class Contraseña extends javax.swing.JFrame {
      */
     public Contraseña() {
         initComponents();
+        this.getContentPane().setBackground(Color.white);
     }
 
     /**

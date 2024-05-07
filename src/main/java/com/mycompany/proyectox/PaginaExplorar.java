@@ -4,6 +4,8 @@
  */
 package com.mycompany.proyectox;
 
+import java.awt.Color;
+
 /**
  *
  * @author user
@@ -15,6 +17,7 @@ public class PaginaExplorar extends javax.swing.JFrame {
      */
     public PaginaExplorar() {
         initComponents();
+        this.getContentPane().setBackground(Color.white);
     }
 
     /**

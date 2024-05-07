@@ -4,6 +4,8 @@
  */
 package com.mycompany.proyectox;
 
+import java.awt.Color;
+
 /**
  *
  * @author user
@@ -15,6 +17,7 @@ public class SeccionPerfil extends javax.swing.JFrame {
      */
     public SeccionPerfil() {
         initComponents();
+        this.getContentPane().setBackground(Color.white);
     }
 
     /**

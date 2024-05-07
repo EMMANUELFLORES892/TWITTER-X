@@ -4,6 +4,8 @@
  */
 package com.mycompany.proyectox;
 
+import java.awt.Color;
+
 /**
  *
  * @author CCCU
@@ -15,6 +17,7 @@ public class datos extends javax.swing.JFrame {
      */
     public datos() {
         initComponents();
+        this.getContentPane().setBackground(Color.white);
     }
 
     /**

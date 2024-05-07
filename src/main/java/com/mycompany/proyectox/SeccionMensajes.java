@@ -4,6 +4,8 @@
  */
 package com.mycompany.proyectox;
 
+import java.awt.Color;
+
 /**
  *
  * @author user
@@ -15,6 +17,7 @@ public class SeccionMensajes extends javax.swing.JFrame {
      */
     public SeccionMensajes() {
         initComponents();
+        this.getContentPane().setBackground(Color.white);
     }
 
     /**

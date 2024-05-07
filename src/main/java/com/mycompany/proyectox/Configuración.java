@@ -4,6 +4,8 @@
  */
 package com.mycompany.proyectox;
 
+import java.awt.Color;
+
 /**
  *
  * @author CCCU
@@ -15,6 +17,7 @@ public class Configuración extends javax.swing.JFrame {
      */
     public Configuración() {
         initComponents();
+        this.getContentPane().setBackground(Color.white);
     }
 
     /**

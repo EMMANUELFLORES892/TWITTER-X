@@ -4,6 +4,7 @@
  */
 package com.mycompany.proyectox;
 
+import java.awt.Color;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
@@ -20,6 +21,7 @@ public class BasePagina extends javax.swing.JFrame {
      */
     public BasePagina() {
         initComponents();
+        this.getContentPane().setBackground(Color.white);
     }
 
     /**
@@ -76,6 +78,11 @@ public class BasePagina extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         BotonSiguiendo.setText("Siguiendo");
+        BotonSiguiendo.setBorder(null);
+        BotonSiguiendo.setBorderPainted(false);
+        BotonSiguiendo.setContentAreaFilled(false);
+        BotonSiguiendo.setFocusable(false);
+        BotonSiguiendo.setOpaque(true);
         BotonSiguiendo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 BotonSiguiendoActionPerformed(evt);
@@ -88,8 +95,18 @@ public class BasePagina extends javax.swing.JFrame {
         TextPost.setText("Publicacion");
 
         BotonParaTi.setText("<html><p style = \"font: Berlin Sans FB \">Para ti</p></html> ");
+        BotonParaTi.setBorder(null);
+        BotonParaTi.setBorderPainted(false);
+        BotonParaTi.setContentAreaFilled(false);
+        BotonParaTi.setFocusable(false);
+        BotonParaTi.setOpaque(true);
 
         jButton1.setText("ajustes");
+        jButton1.setBorder(null);
+        jButton1.setBorderPainted(false);
+        jButton1.setContentAreaFilled(false);
+        jButton1.setFocusable(false);
+        jButton1.setOpaque(true);
 
         BotonCuentaRecom2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         BotonCuentaRecom2.setText("Cuenta recom 2");
@@ -428,11 +445,11 @@ public class BasePagina extends javax.swing.JFrame {
                 .addGap(47, 47, 47)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(BotonParaTi, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(BotonParaTi, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(BotonSiguiendo, javax.swing.GroupLayout.PREFERRED_SIZE, 176, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(49, 49, 49)
-                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(35, 35, 35)
+                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(TextPost, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 451, Short.MAX_VALUE)
                     .addComponent(jScrollPane4, javax.swing.GroupLayout.Alignment.LEADING))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 33, Short.MAX_VALUE)

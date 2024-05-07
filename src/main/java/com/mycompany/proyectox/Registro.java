@@ -1,6 +1,7 @@
 
 package com.mycompany.proyectox;
 
+import java.awt.Color;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -14,6 +15,7 @@ public class Registro extends javax.swing.JFrame {
 
     public Registro() {
         initComponents();
+        this.getContentPane().setBackground(Color.white);
     }
 
     /**
