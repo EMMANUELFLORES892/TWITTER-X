@@ -126,7 +126,8 @@ public class Registro extends javax.swing.JFrame {
     }//GEN-LAST:event_txtRegistroNombreActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        String url = "jdbc:ucanaccess://C://Users//PC//Documentos//NetBeansProjects//TWITTER-X//X.accdb";
+        //String url = "jdbc:ucanaccess://C://Users//PC//Documentos//NetBeansProjects//TWITTER-X//X.accdb";
+        String url = "jdbc:ucanaccess://C://Users//CCCU//Documents//NetBeansProjects//TWITTER-X//X.accdb";
         String usuario = ""; // Usuario de la base de datos, si es necesario
         String contraseña = ""; // Contraseña de la base de datos, si es necesario
 
@@ -139,7 +140,7 @@ public class Registro extends javax.swing.JFrame {
         
          try (Connection con = DriverManager.getConnection(url, usuario, contraseña)) {
             // Sentencia SQL para insertar datos en la tabla "usuarios"
-            String sql = "INSERT INTO usuarios (user_handle, email, nombre, apellido, telefono) VALUES (?, ?, ?, ?, ?)";
+            String sql = "INSERT INTO usuarios (user_handle, email, nombre, apellido, telefono, creado_en) VALUES (?, ?, ?, ?, ?, ?)";
             
             try (PreparedStatement pstmt = con.prepareStatement(sql)) {
                 // Establecer los valores de los parámetros en la sentencia SQL
@@ -148,6 +149,13 @@ public class Registro extends javax.swing.JFrame {
                 pstmt.setString(3, nombre);
                 pstmt.setString(4, apellido);
                 pstmt.setString(5, telefono);
+                
+                // Obtener la fecha y hora actuales del sistema
+                 java.util.Date fechaActual = new java.util.Date();
+                 java.sql.Date fechaSQL = new java.sql.Date(fechaActual.getTime());
+        
+                 // Establecer la fecha actual como valor para la columna de creado_en
+                 pstmt.setDate(6, fechaSQL);
                 
                 // Ejecutar la sentencia SQL
                 int filasInsertadas = pstmt.executeUpdate();
