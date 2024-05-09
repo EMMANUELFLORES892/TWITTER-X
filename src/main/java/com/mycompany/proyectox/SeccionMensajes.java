@@ -373,7 +373,9 @@ public class SeccionMensajes extends javax.swing.JFrame {
     }//GEN-LAST:event_BotonMensajes1ActionPerformed
 
     private void BotonInicio1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonInicio1ActionPerformed
-        // TODO add your handling code here:
+        // Boton que lleva a la pagina base
+        new BasePagina().setVisible(true);
+        this.setVisible(false);
     }//GEN-LAST:event_BotonInicio1ActionPerformed
 
     private void BotonListas1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonListas1ActionPerformed

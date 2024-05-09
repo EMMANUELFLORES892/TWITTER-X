@@ -628,7 +628,9 @@ public class SeccionPerfil extends javax.swing.JFrame {
     }//GEN-LAST:event_BotonExplorarActionPerformed
 
     private void BotonInicioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonInicioActionPerformed
-        // TODO add your handling code here:
+        // Boton que lleva al inicio de la pagina
+        new BasePagina().setVisible(true);
+        this.setVisible(false);
     }//GEN-LAST:event_BotonInicioActionPerformed
 
     private void BotonVolverArribaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonVolverArribaActionPerformed
