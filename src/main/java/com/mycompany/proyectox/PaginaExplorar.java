@@ -608,7 +608,8 @@ public class PaginaExplorar extends javax.swing.JFrame {
     }//GEN-LAST:event_BotonMensajesActionPerformed
 
     private void BotonInicioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonInicioActionPerformed
-        // TODO add your handling code here:
+        new BasePagina().setVisible(true);
+        this.setVisible(false);
     }//GEN-LAST:event_BotonInicioActionPerformed
 
     private void BotonListasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonListasActionPerformed

@@ -399,6 +399,11 @@ public class BasePagina extends javax.swing.JFrame {
         BotonUsuario.setFocusable(false);
         BotonUsuario.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         BotonUsuario.setOpaque(true);
+        BotonUsuario.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BotonUsuarioActionPerformed(evt);
+            }
+        });
 
         jLabel5.setText("jLabel1");
 
@@ -546,7 +551,8 @@ public class BasePagina extends javax.swing.JFrame {
     }//GEN-LAST:event_BotonMensajesActionPerformed
 
     private void BotonInicioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonInicioActionPerformed
-        // TODO add your handling code here:
+        new BasePagina().setVisible(true);
+        this.setVisible(false);
     }//GEN-LAST:event_BotonInicioActionPerformed
 
     private void BotonListasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonListasActionPerformed
@@ -556,7 +562,7 @@ public class BasePagina extends javax.swing.JFrame {
     }//GEN-LAST:event_BotonListasActionPerformed
 
     private void BotonPremiumActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonPremiumActionPerformed
-        // TODO add your handling code here:
+        // Tecnicamente no hay seccion premium 
     }//GEN-LAST:event_BotonPremiumActionPerformed
 
     private void BotonPerfilActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonPerfilActionPerformed
@@ -571,12 +577,16 @@ public class BasePagina extends javax.swing.JFrame {
     }//GEN-LAST:event_BotonExplorarActionPerformed
 
     private void BotonMasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonMasActionPerformed
-        // TODO add your handling code here:
+        // Aun no hay seccion de "mostrar mas"
     }//GEN-LAST:event_BotonMasActionPerformed
 
     private void BotonPostActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonPostActionPerformed
         new SeccionCrearPublicacion().setVisible(true);
     }//GEN-LAST:event_BotonPostActionPerformed
+
+    private void BotonUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonUsuarioActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_BotonUsuarioActionPerformed
 
     /**
      * @param args the command line arguments
