@@ -5,7 +5,11 @@
 package com.mycompany.proyectox;
 
 import java.awt.Color;
+import static java.awt.Color.blue;
+import static java.awt.Color.white;
 import javax.swing.JFrame;
+
+
 
 /**
  *
@@ -30,7 +34,14 @@ public class Login extends javax.swing.JFrame {
         this.setLocationRelativeTo(this);
         Img.SetImageLabel(logoX, "src/main/java/Imagenes_Login/X-Logo.png", 384, 216);
         
+        //ImageButtonUtil.addImageToButton(Boton_Google, "src/main/java/Imagenes_Login/l_google_mini.png", 32, 31);
+        
         getContentPane().setBackground(Color.WHITE);
+        
+        //this.Boton_Google.setBackground(blue);
+        //this.Boton_Apple.setBackground(white);
+        
+        BotonRedondo.hacerRedondeado(Boton_Google, 30,white,blue);
     }
     
     
@@ -47,11 +58,11 @@ public class Login extends javax.swing.JFrame {
         logoX = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
-        jButton2 = new javax.swing.JButton();
+        Boton_Apple = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
-        jButton4 = new javax.swing.JButton();
         jLabel6 = new javax.swing.JLabel();
         jButton3 = new javax.swing.JButton();
+        Boton_Google = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(0, 0, 0));
@@ -65,24 +76,15 @@ public class Login extends javax.swing.JFrame {
         jLabel5.setFont(new java.awt.Font("Arial Black", 1, 18)); // NOI18N
         jLabel5.setText("Unete Hoy");
 
-        jButton2.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 12)); // NOI18N
-        jButton2.setText("Registrarse con Apple");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        Boton_Apple.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 12)); // NOI18N
+        Boton_Apple.setText("Registrarse con Apple");
+        Boton_Apple.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                Boton_AppleActionPerformed(evt);
             }
         });
 
         jLabel3.setText("<html>\nAl registrarte, aceptas los Términos de servicio y la Política <br>\nde privacidad, incluida la política de Uso de Cookies.");
-
-        jButton4.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 12)); // NOI18N
-        jButton4.setText("Registrarse con Google");
-        jButton4.setBorder(null);
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
-            }
-        });
 
         jLabel6.setFont(new java.awt.Font("Arial Black", 1, 14)); // NOI18N
         jLabel6.setText("¿Ya tienes cuenta?");
@@ -99,6 +101,14 @@ public class Login extends javax.swing.JFrame {
             }
         });
 
+        Boton_Google.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 12)); // NOI18N
+        Boton_Google.setText("Registrarse con Google");
+        Boton_Google.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Boton_GoogleActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -112,10 +122,9 @@ public class Login extends javax.swing.JFrame {
                     .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel5)
                     .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                        .addComponent(jButton4, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 257, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jLabel6))
+                    .addComponent(jLabel6)
+                    .addComponent(Boton_Apple, javax.swing.GroupLayout.PREFERRED_SIZE, 257, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Boton_Google, javax.swing.GroupLayout.PREFERRED_SIZE, 257, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18))
         );
         layout.setVerticalGroup(
@@ -127,10 +136,10 @@ public class Login extends javax.swing.JFrame {
                         .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(jLabel5)
-                        .addGap(15, 15, 15)
-                        .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(7, 7, 7)
-                        .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(Boton_Google, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(10, 10, 10)
+                        .addComponent(Boton_Apple, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
@@ -146,17 +155,17 @@ public class Login extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void Boton_AppleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Boton_AppleActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton2ActionPerformed
-
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton4ActionPerformed
+    }//GEN-LAST:event_Boton_AppleActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void Boton_GoogleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Boton_GoogleActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Boton_GoogleActionPerformed
 
     /**
      * @param args the command line arguments
@@ -194,9 +203,9 @@ public class Login extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton2;
+    private javax.swing.JButton Boton_Apple;
+    public javax.swing.JButton Boton_Google;
     private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel5;

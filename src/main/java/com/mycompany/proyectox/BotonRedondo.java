@@ -8,33 +8,40 @@ import javax.swing.*;
 
 public class BotonRedondo extends JButton {
 
-    private int radio = 30; // Ajusta este valor para cambiar la redondez de los bordes
+    //private int radio = 30; // Ajusta este valor para cambiar la redondez de los bordes
 
-    public BotonRedondo(String text) {
-        super(text);
-        setContentAreaFilled(false);
+    public static void hacerRedondeado(JButton boton, int radio, Color colorFondo, Color colorBorde) {
+        // Crear un nuevo botón con bordes redondeados usando un Border
+        boton.setContentAreaFilled(false);
+        boton.setBorder(new RoundedBorder(radio, colorBorde));
+        boton.setBackground(colorFondo);
     }
 
-    @Override
-    protected void paintComponent(Graphics g) {
-        if (getModel().isArmed()) {
-            g.setColor(Color.lightGray);
-        } else {
-            g.setColor(getBackground());
+    // Clase interna para el borde redondeado
+    static class RoundedBorder implements javax.swing.border.Border {
+        private int radio;
+        private Color colorBorde;
+
+        RoundedBorder(int radio, Color colorBorde) {
+            this.radio = radio;
+            this.colorBorde = colorBorde;
         }
-        g.fillRoundRect(0, 0, getWidth() - 1, getHeight() - 1, radio, radio);
-        super.paintComponent(g);
-    }
 
-    @Override
-    protected void paintBorder(Graphics g) {
-        g.setColor(getForeground());
-        g.drawRoundRect(0, 0, getWidth() - 1, getHeight() - 1, radio, radio);
-    }
+        @Override
+        public Insets getBorderInsets(Component c) {
+            return new Insets(this.radio + 1, this.radio + 1, this.radio + 2, this.radio);
+        }
 
-    public void setRadio(int radio) {
-        this.radio = radio;
-        repaint();
+        @Override
+        public boolean isBorderOpaque() {
+            return true;
+        }
+
+        @Override
+        public void paintBorder(Component c, Graphics g, int x, int y, int width, int height) {
+            g.setColor(colorBorde);
+            g.drawRoundRect(x, y, width - 1, height - 1, radio, radio);
+        }
     }
 }
 
