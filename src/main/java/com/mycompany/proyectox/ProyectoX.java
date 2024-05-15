@@ -19,7 +19,7 @@ public class ProyectoX {
         try{
             //La direccion en la linea 22 es para las computadoras en la uni
             //String url = "jdbc:ucanaccess://C://Users//PC//Documentos//NetBeansProjects//TWITTER-X//X.accdb";
-            String url = "jdbc:ucanaccess://C://Users//CCCU//Documents//NetBeansProjects//TWITTER-X//X.accdb";
+            String url = "jdbc:ucanaccess://X.accdb";
             Connection conn = DriverManager.getConnection(url);
             /*String sql = "SELECT * FROM "
             PreparedStatement pat = conn.prepareStatement(sql);

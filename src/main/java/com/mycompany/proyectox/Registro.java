@@ -129,7 +129,7 @@ public class Registro extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         //String url = "jdbc:ucanaccess://C://Users//PC//Documentos//NetBeansProjects//TWITTER-X//X.accdb";
-        String url = "jdbc:ucanaccess://C://Users//CCCU//Documents//NetBeansProjects//TWITTER-X//X.accdb";
+        String url = "jdbc:ucanaccess://X.accdb";
         String usuario = ""; // Usuario de la base de datos, si es necesario
         String contraseña = ""; // Contraseña de la base de datos, si es necesario
 
