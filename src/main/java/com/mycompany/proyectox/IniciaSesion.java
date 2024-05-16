@@ -12,6 +12,7 @@ import java.awt.event.FocusEvent;
 import java.awt.event.FocusListener;
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
@@ -63,7 +64,7 @@ public class IniciaSesion extends javax.swing.JFrame {
 
         Logo = new javax.swing.JLabel();
         Usuario = new javax.swing.JTextField();
-        jPasswordField1 = new javax.swing.JPasswordField();
+        contras = new javax.swing.JPasswordField();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jSeparator2 = new javax.swing.JSeparator();
@@ -83,11 +84,11 @@ public class IniciaSesion extends javax.swing.JFrame {
             }
         });
 
-        jPasswordField1.setText("Contraseña");
-        jPasswordField1.setToolTipText("");
-        jPasswordField1.addActionListener(new java.awt.event.ActionListener() {
+        contras.setText("Contraseña");
+        contras.setToolTipText("");
+        contras.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jPasswordField1ActionPerformed(evt);
+                contrasActionPerformed(evt);
             }
         });
 
@@ -136,7 +137,7 @@ public class IniciaSesion extends javax.swing.JFrame {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(Usuario, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(jPasswordField1, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(contras, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGroup(layout.createSequentialGroup()
                                     .addGap(19, 19, 19)
                                     .addComponent(error2))
@@ -160,7 +161,7 @@ public class IniciaSesion extends javax.swing.JFrame {
                 .addGap(1, 1, 1)
                 .addComponent(error1)
                 .addGap(18, 18, 18)
-                .addComponent(jPasswordField1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(contras, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(error2)
                 .addGap(18, 18, 18)
@@ -177,9 +178,9 @@ public class IniciaSesion extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_UsuarioActionPerformed
 
-    private void jPasswordField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jPasswordField1ActionPerformed
+    private void contrasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_contrasActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jPasswordField1ActionPerformed
+    }//GEN-LAST:event_contrasActionPerformed
 
     private void SiguienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SiguienteActionPerformed
         // TODO add your handling code here:
@@ -192,6 +193,11 @@ public class IniciaSesion extends javax.swing.JFrame {
     
     // Obtener el texto ingresado en el JTextField
         String textoIngresado = Usuario.getText();
+        this.error1.setVisible(false);
+        this.error2.setVisible(false);
+        // Obtener el texto ingresado en el JPasswordField (asumiendo que se llama passwordField)
+        char[] contrasenaIngresada = contras.getPassword();
+        String contrasena = new String(contrasenaIngresada); // Convertir el arreglo de caracteres en una cadena
         
         // Realizar la conexión a la base de datos
         try (Connection conn = DriverManager.getConnection("jdbc:ucanaccess://X.accdb")) {
@@ -199,6 +205,7 @@ public class IniciaSesion extends javax.swing.JFrame {
             String sql = "SELECT user_handle, email FROM usuarios";
             
             // Ejecutar la consulta
+            boolean encontrado = false; // Bandera para indicar si se encontró una coincidencia
             try (Statement stmt = conn.createStatement();
                  ResultSet rs = stmt.executeQuery(sql)) {
                 // Iterar sobre los resultados
@@ -212,21 +219,61 @@ public class IniciaSesion extends javax.swing.JFrame {
                         // El texto ingresado es igual a un valor en la base de datos
                         System.out.println("El texto ingresado es igual a un valor en la base de datos.");
                         // Realizar alguna acción adicional si es necesario
-                        
-                        //HASTA ESTA PARTE SE VERIFICA QUE EL NOMBRE DE USUARIO INGRESADO ESTE DENTRO DE LA BASE DE DATOS
-                        
-                        
-                        
+                        encontrado = true;
+
                         break; // Salir del bucle si se encuentra una coincidencia
                     }
                 }
             }
+            /*if (!encontrado) {
+                System.out.println("El texto ingresado no coincide con ningún valor en ninguna columna.");
+                // Realizar alguna acción adicional si es necesario
+                System.out.println("No Se Encontro ninguna conicidencia.");
+                this.error1.setVisible(true);
+                //this.error2.setVisible(true);
+            }*/
+//HASTA ESTA PARTE SE VERIFICA QUE EL NOMBRE DE USUARIO INGRESADO ESTE DENTRO DE LA BASE DE DATOS------------------------------------------------------
+            // Verificar si se encontró una coincidencia en el JTextField
+            if (encontrado) {
+                // Ahora, verifica el dato ingresado en el JPasswordField
+                String sqlContrasena = "SELECT contra FROM usuarios WHERE user_handle = ? OR email = ?";
+                try (PreparedStatement pstmt = conn.prepareStatement(sqlContrasena)) {
+                    pstmt.setString(1, textoIngresado);
+                    pstmt.setString(2, textoIngresado);
+                    ResultSet rsContrasena = pstmt.executeQuery();
+                    if (rsContrasena.next()) {
+                        String contrasenaBaseDatos = rsContrasena.getString("contra");
+                        contrasenaBaseDatos = contrasenaBaseDatos.replace("<div>", "").replace("</div>", "");
+                        if (contrasena.equals(contrasenaBaseDatos)) {
+                            // La contraseña ingresada coincide con la contraseña en la base de datos
+                            System.out.println("La contraseña ingresada coincide con la contraseña en la base de datos.");
+                            this.dispose();
+                            BasePagina frame = new BasePagina();
+                            frame.setVisible(true);
+                            
+                            // Realizar alguna acción adicional si es necesario
+                        } else {
+                            // La contraseña ingresada no coincide con la contraseña en la base de datos
+                            System.out.println("La contraseña ingresada no coincide con la contraseña en la base de datos.");
+                            this.error2.setVisible(true);
+                            System.out.println(contrasenaIngresada);//para comprobar que dato retiene
+                            System.out.println(contrasenaBaseDatos);
+                        }
+                    } else {
+                        // No se encontró el usuario en la base de datos
+                        System.out.println("El usuario no existe en la base de datos.");
+                        // Realizar alguna acción adicional si es necesario
+                    }
+                }
+            } else {
+                // El texto ingresado en el JTextField no coincide con ningún valor en ninguna columna
+                System.out.println("El texto ingresado en el JTextField no coincide con ningún valor en ninguna columna.");
+                this.error1.setVisible(true);
+                this.error2.setVisible(true);
+                // Realizar alguna acción adicional si es necesario
+            }
         } catch (SQLException ex) {
             ex.printStackTrace();
-            System.out.println("No Se Encontro ninguna conicidencia.");
-            this.error1.setVisible(true);
-            this.error2.setVisible(true);
-            
         }
     
     
@@ -278,11 +325,11 @@ public class IniciaSesion extends javax.swing.JFrame {
     private javax.swing.JLabel Logo;
     private javax.swing.JButton Siguiente;
     private javax.swing.JTextField Usuario;
+    private javax.swing.JPasswordField contras;
     private javax.swing.JLabel error1;
     private javax.swing.JLabel error2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JPasswordField jPasswordField1;
     private javax.swing.JSeparator jSeparator2;
     // End of variables declaration//GEN-END:variables
 }
