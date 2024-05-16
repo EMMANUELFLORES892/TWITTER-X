@@ -6,7 +6,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
-import java.sql.Statement;
+import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 
 
@@ -15,7 +15,21 @@ public class Registro extends javax.swing.JFrame {
 
     public Registro() {
         initComponents();
-        this.getContentPane().setBackground(Color.white);
+        Imagenes Img = new Imagenes();
+       // PanelPersonalizado panel = new PanelPersonalizado();
+        getContentPane().setBackground(Color.WHITE);
+        
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setResizable(false);
+        
+        this.setLocationRelativeTo(this);
+        
+        Img.SetImageLabel(Logo,"src/main/java/Imagenes_Login/X-Logo.png", 80, 50);
+        
+        //BotonRedondo.hacerRedondeado(jButton1, 15,white,gray);
+        //personalizarPanel(jPanel1, white, cyan, 20);
+        
+       
     }
 
     /**
@@ -27,141 +41,151 @@ public class Registro extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        jLabel2 = new javax.swing.JLabel();
-        txtRegistroNombre = new javax.swing.JTextField();
-        txtRegistroApellido = new javax.swing.JTextField();
-        jLabel3 = new javax.swing.JLabel();
-        txtRegistroTelefono = new javax.swing.JTextField();
-        jLabel4 = new javax.swing.JLabel();
-        txtRegistroUserHandle = new javax.swing.JTextField();
-        jLabel5 = new javax.swing.JLabel();
-        txtRegistroEmail = new javax.swing.JTextField();
+        Siguiente = new javax.swing.JButton();
+        Logo = new javax.swing.JLabel();
+        nom = new javax.swing.JTextField();
+        jLabel6 = new javax.swing.JLabel();
+        ape = new javax.swing.JTextField();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        tel = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jLabel1.setText("Nombre: ");
-
-        jButton1.setText("Enviar");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        Siguiente.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 14)); // NOI18N
+        Siguiente.setText("Siguiente");
+        Siguiente.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                SiguienteActionPerformed(evt);
             }
         });
 
-        jLabel2.setText("Apellido:");
+        Logo.setText("Logo mini");
+        Logo.setPreferredSize(new java.awt.Dimension(70, 70));
 
-        txtRegistroNombre.addActionListener(new java.awt.event.ActionListener() {
+        nom.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtRegistroNombreActionPerformed(evt);
+                nomActionPerformed(evt);
             }
         });
 
-        jLabel3.setText("Telefono:");
+        jLabel6.setText("Nombre");
 
-        jLabel4.setText("Nombre de usuario:");
-
-        txtRegistroUserHandle.addActionListener(new java.awt.event.ActionListener() {
+        ape.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtRegistroUserHandleActionPerformed(evt);
+                apeActionPerformed(evt);
             }
         });
 
-        jLabel5.setText("E-mail:");
+        jLabel8.setText("Apellido");
+
+        jLabel7.setText("Telefono");
+
+        tel.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                telActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(95, 95, 95)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(111, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel2)
-                    .addComponent(jLabel1)
-                    .addComponent(jLabel3)
-                    .addComponent(jLabel4)
-                    .addComponent(jLabel5))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(txtRegistroNombre)
-                    .addComponent(jButton1)
-                    .addComponent(txtRegistroApellido)
-                    .addComponent(txtRegistroTelefono)
-                    .addComponent(txtRegistroUserHandle, javax.swing.GroupLayout.DEFAULT_SIZE, 118, Short.MAX_VALUE)
-                    .addComponent(txtRegistroEmail))
-                .addContainerGap(190, Short.MAX_VALUE))
+                    .addComponent(jLabel6)
+                    .addComponent(nom, javax.swing.GroupLayout.PREFERRED_SIZE, 307, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel8)
+                    .addComponent(ape, javax.swing.GroupLayout.PREFERRED_SIZE, 308, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(tel, javax.swing.GroupLayout.PREFERRED_SIZE, 305, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel7))
+                .addGap(106, 106, 106))
+            .addGroup(layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(227, 227, 227)
+                        .addComponent(Logo, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(159, 159, 159)
+                        .addComponent(Siguiente, javax.swing.GroupLayout.PREFERRED_SIZE, 186, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap(54, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel4)
-                    .addComponent(txtRegistroUserHandle, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel5)
-                    .addComponent(txtRegistroEmail, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(19, 19, 19)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel1)
-                    .addComponent(txtRegistroNombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel2)
-                    .addComponent(txtRegistroApellido, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel3)
-                    .addComponent(txtRegistroTelefono, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(30, 30, 30)
-                .addComponent(jButton1)
-                .addGap(41, 41, 41))
+                .addContainerGap()
+                .addComponent(Logo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(66, 66, 66)
+                .addComponent(jLabel6)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(nom, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(29, 29, 29)
+                .addComponent(jLabel8)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(ape, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(34, 34, 34)
+                .addComponent(jLabel7)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(tel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(123, 123, 123)
+                .addComponent(Siguiente)
+                .addGap(67, 67, 67))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void txtRegistroNombreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtRegistroNombreActionPerformed
+    private void telActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_telActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtRegistroNombreActionPerformed
+    }//GEN-LAST:event_telActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void apeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_apeActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_apeActionPerformed
+
+    private void nomActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nomActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_nomActionPerformed
+
+    private void SiguienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SiguienteActionPerformed
         //String url = "jdbc:ucanaccess://C://Users//PC//Documentos//NetBeansProjects//TWITTER-X//X.accdb";
         String url = "jdbc:ucanaccess://X.accdb";
         String usuario = ""; // Usuario de la base de datos, si es necesario
         String contraseña = ""; // Contraseña de la base de datos, si es necesario
 
-        
-        String userHandle = txtRegistroUserHandle.getText();
-        String email = txtRegistroEmail.getText();
-        String nombre = txtRegistroNombre.getText();
-        String apellido = txtRegistroApellido.getText();
-        String telefono = txtRegistroTelefono.getText();
-        
-         try (Connection con = DriverManager.getConnection(url, usuario, contraseña)) {
+        /*String userHandle = nombre.getText();
+        //String email = txtRegistroEmail.getText();
+        String nombre = nombre.getText();
+        String apellido = pellido.getText();
+        String telefono = telefono.getText();*/
+
+        String nombre = nom.getText();
+        String apellido = ape.getText();
+        String telefono = tel.getText();
+
+        try (Connection con = DriverManager.getConnection(url, usuario, contraseña)) {
             // Sentencia SQL para insertar datos en la tabla "usuarios"
-            String sql = "INSERT INTO usuarios (user_handle, email, nombre, apellido, telefono, creado_en) VALUES (?, ?, ?, ?, ?, ?)";
-            
+            String sql = "INSERT INTO usuarios ( nombre, apellido, telefono, creado_en) VALUES (?, ?, ?, ?)";
+
             try (PreparedStatement pstmt = con.prepareStatement(sql)) {
                 // Establecer los valores de los parámetros en la sentencia SQL
-                pstmt.setString(1, userHandle);
-                pstmt.setString(2, email);
-                pstmt.setString(3, nombre);
-                pstmt.setString(4, apellido);
-                pstmt.setString(5, telefono);
-                
+                //pstmt.setString(1, userHandle);
+                //pstmt.setString(2, email);
+                pstmt.setString(1, nombre);
+                pstmt.setString(2, apellido);
+                pstmt.setString(3, telefono);
+
                 // Obtener la fecha y hora actuales del sistema
-                 java.util.Date fechaActual = new java.util.Date();
-                 java.sql.Date fechaSQL = new java.sql.Date(fechaActual.getTime());
-        
-                 // Establecer la fecha actual como valor para la columna de creado_en
-                 pstmt.setDate(6, fechaSQL);
-                
+                java.util.Date fechaActual = new java.util.Date();
+                java.sql.Date fechaSQL = new java.sql.Date(fechaActual.getTime());
+
+                // Establecer la fecha actual como valor para la columna de creado_en
+                pstmt.setDate(4, fechaSQL);
+
                 // Ejecutar la sentencia SQL
                 int filasInsertadas = pstmt.executeUpdate();
-                
+
                 // Comprobar si se insertaron filas
                 if (filasInsertadas > 0) {
                     System.out.println("Se insertaron correctamente los datos en la tabla usuarios.");
@@ -172,7 +196,7 @@ public class Registro extends javax.swing.JFrame {
         }catch(SQLException e){
             JOptionPane.showMessageDialog(null,e.toString());
         }
-        
+
         /*try{
             Connection con = Conexion.getConnection();
             PreparedStatement ps = con.prepareStatement("INSERT INTO usuarios (user_handle, email,nombre,apellido,telefono) VALUES(?,?,?,?,?)");
@@ -187,13 +211,8 @@ public class Registro extends javax.swing.JFrame {
         catch(SQLException e){
             JOptionPane.showMessageDialog(null,e.toString());
         }*/
-                
-        
-    }//GEN-LAST:event_jButton1ActionPerformed
 
-    private void txtRegistroUserHandleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtRegistroUserHandleActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtRegistroUserHandleActionPerformed
+    }//GEN-LAST:event_SiguienteActionPerformed
 
     /**
      * @param args the command line arguments
@@ -231,16 +250,13 @@ public class Registro extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JTextField txtRegistroApellido;
-    private javax.swing.JTextField txtRegistroEmail;
-    private javax.swing.JTextField txtRegistroNombre;
-    private javax.swing.JTextField txtRegistroTelefono;
-    private javax.swing.JTextField txtRegistroUserHandle;
+    private javax.swing.JLabel Logo;
+    private javax.swing.JButton Siguiente;
+    private javax.swing.JTextField ape;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JTextField nom;
+    private javax.swing.JTextField tel;
     // End of variables declaration//GEN-END:variables
 }

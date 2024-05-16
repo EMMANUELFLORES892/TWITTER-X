@@ -65,7 +65,7 @@ public class IniciaSesion extends javax.swing.JFrame {
         Logo = new javax.swing.JLabel();
         Usuario = new javax.swing.JTextField();
         contras = new javax.swing.JPasswordField();
-        jLabel1 = new javax.swing.JLabel();
+        Registro = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jSeparator2 = new javax.swing.JSeparator();
         Siguiente = new javax.swing.JButton();
@@ -92,7 +92,12 @@ public class IniciaSesion extends javax.swing.JFrame {
             }
         });
 
-        jLabel1.setText("<html>\n¿No tienes una cuenta?  <font color= \"rgb(51, 153, 255)\">Regístrate</font>");
+        Registro.setText("<html>\n¿No tienes una cuenta?  <font color= \"rgb(51, 153, 255)\">Regístrate</font>");
+        Registro.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                RegistroMouseClicked(evt);
+            }
+        });
 
         jLabel2.setFont(new java.awt.Font("Arial Black", 0, 36)); // NOI18N
         jLabel2.setText("Inicia sesión en X");
@@ -131,7 +136,7 @@ public class IniciaSesion extends javax.swing.JFrame {
                         .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 308, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(97, 97, 97)
-                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(Registro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(56, 56, 56)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
@@ -167,7 +172,7 @@ public class IniciaSesion extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(Siguiente, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 44, Short.MAX_VALUE)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(Registro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(23, 23, 23))
         );
 
@@ -225,13 +230,6 @@ public class IniciaSesion extends javax.swing.JFrame {
                     }
                 }
             }
-            /*if (!encontrado) {
-                System.out.println("El texto ingresado no coincide con ningún valor en ninguna columna.");
-                // Realizar alguna acción adicional si es necesario
-                System.out.println("No Se Encontro ninguna conicidencia.");
-                this.error1.setVisible(true);
-                //this.error2.setVisible(true);
-            }*/
 //HASTA ESTA PARTE SE VERIFICA QUE EL NOMBRE DE USUARIO INGRESADO ESTE DENTRO DE LA BASE DE DATOS------------------------------------------------------
             // Verificar si se encontró una coincidencia en el JTextField
             if (encontrado) {
@@ -286,6 +284,15 @@ public class IniciaSesion extends javax.swing.JFrame {
     
     }//GEN-LAST:event_SiguienteActionPerformed
 
+    private void RegistroMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_RegistroMouseClicked
+        // TODO add your handling code here:
+        this.dispose();
+    
+    // Crear una nueva instancia del JFrame que deseas abrir
+    Registro frame = new Registro();
+    frame.setVisible(true);
+    }//GEN-LAST:event_RegistroMouseClicked
+
     /**
      * @param args the command line arguments
      */
@@ -323,12 +330,12 @@ public class IniciaSesion extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel Logo;
+    private javax.swing.JLabel Registro;
     private javax.swing.JButton Siguiente;
     private javax.swing.JTextField Usuario;
     private javax.swing.JPasswordField contras;
     private javax.swing.JLabel error1;
     private javax.swing.JLabel error2;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JSeparator jSeparator2;
     // End of variables declaration//GEN-END:variables
