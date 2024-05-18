@@ -42,14 +42,9 @@ public class IniciaSesion extends javax.swing.JFrame {
         this.error2.setVisible(false);
         
         Img.SetImageLabel(Logo,"src/main/java/Imagenes_Login/X-Logo.png", 80, 50);
+        Img.SetImageLabel(atras,"src/main/java/Imagenes_Login/anterior.png", 23, 19);
         BotonRedondo.hacerRedondeado(Siguiente, 30,white,gray);
 //----------------------------------------------------------------------------------------------------------------------------------------------
-        
-    
-    
-    
-    
-    
     
     }
 
@@ -71,6 +66,7 @@ public class IniciaSesion extends javax.swing.JFrame {
         Siguiente = new javax.swing.JButton();
         error1 = new javax.swing.JLabel();
         error2 = new javax.swing.JLabel();
+        atras = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -119,6 +115,13 @@ public class IniciaSesion extends javax.swing.JFrame {
         error2.setForeground(new java.awt.Color(204, 0, 51));
         error2.setText("Contraseña Incorrecta");
 
+        atras.setText(".");
+        atras.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                atrasMouseClicked(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -126,7 +129,9 @@ public class IniciaSesion extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(157, 157, 157)
+                        .addContainerGap()
+                        .addComponent(atras, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(128, 128, 128)
                         .addComponent(Logo, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(21, 21, 21)
@@ -156,7 +161,9 @@ public class IniciaSesion extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(Logo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(atras)
+                    .addComponent(Logo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel2)
                 .addGap(18, 18, 18)
@@ -293,6 +300,12 @@ public class IniciaSesion extends javax.swing.JFrame {
     frame.setVisible(true);
     }//GEN-LAST:event_RegistroMouseClicked
 
+    private void atrasMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_atrasMouseClicked
+        this.dispose();
+        Login frame = new Login();
+        frame.setVisible(true);
+    }//GEN-LAST:event_atrasMouseClicked
+
     /**
      * @param args the command line arguments
      */
@@ -333,6 +346,7 @@ public class IniciaSesion extends javax.swing.JFrame {
     private javax.swing.JLabel Registro;
     private javax.swing.JButton Siguiente;
     private javax.swing.JTextField Usuario;
+    private javax.swing.JLabel atras;
     private javax.swing.JPasswordField contras;
     private javax.swing.JLabel error1;
     private javax.swing.JLabel error2;

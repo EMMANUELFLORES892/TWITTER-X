@@ -6,6 +6,7 @@ import java.awt.GridLayout;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.time.LocalDate;
 import javax.swing.JFrame;
@@ -13,6 +14,7 @@ import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JPasswordField;
+import javax.swing.JTextField;
 
 
 public class Registro extends javax.swing.JFrame {
@@ -30,6 +32,7 @@ public class Registro extends javax.swing.JFrame {
         this.setLocationRelativeTo(this);
         
         Img.SetImageLabel(Logo,"src/main/java/Imagenes_Login/X-Logo.png", 80, 50);
+        Img.SetImageLabel(atras,"src/main/java/Imagenes_Login/anterior.png", 23, 19);
         
         //BotonRedondo.hacerRedondeado(jButton1, 15,white,gray);
         //personalizarPanel(jPanel1, white, cyan, 20);
@@ -61,6 +64,7 @@ public class Registro extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
+        atras = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -113,6 +117,13 @@ public class Registro extends javax.swing.JFrame {
 
         jLabel4.setText("Año");
 
+        atras.setText(".");
+        atras.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                atrasMouseClicked(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -147,7 +158,9 @@ public class Registro extends javax.swing.JFrame {
                             .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addContainerGap(38, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
+                .addContainerGap()
+                .addComponent(atras, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(Logo, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(197, 197, 197))
         );
@@ -155,7 +168,9 @@ public class Registro extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(Logo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(Logo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(atras))
                 .addGap(70, 70, 70)
                 .addComponent(jLabel6)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 14, Short.MAX_VALUE)
@@ -186,6 +201,8 @@ public class Registro extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private String username;
+    
     private void telActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_telActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_telActionPerformed
@@ -221,6 +238,12 @@ public class Registro extends javax.swing.JFrame {
             return;
         }
 
+        // Verificar si el nombre de usuario ya existe en la base de datos
+        if (existeNombreUsuario(username)) {
+            JOptionPane.showMessageDialog(this, "El nombre de usuario ya está en uso. Por favor, elija otro.", "Error", JOptionPane.ERROR_MESSAGE);
+            return;
+        }
+
         try {
             // Crear la fecha de nacimiento
             LocalDate fechaNacimiento = LocalDate.of(year, month, day);
@@ -228,29 +251,34 @@ public class Registro extends javax.swing.JFrame {
             // Conectar a la base de datos
             try (Connection con = DriverManager.getConnection(url, usuario, contraseña)) {
                 // Sentencia SQL para insertar datos en la tabla "usuarios"
-                String sql = "INSERT INTO usuarios (nombre, apellido, telefono, fecha_nacimiento, contra, creado_en) VALUES (?, ?, ?, ?, ?, ?)";
+                String sql = "INSERT INTO usuarios (user_handle, nombre, apellido, telefono, fecha_nacimiento, contra, creado_en) VALUES (?, ?, ?, ?, ?, ?, ?)";
 
                 try (PreparedStatement pstmt = con.prepareStatement(sql)) {
                     // Establecer los valores de los parámetros en la sentencia SQL
-                    pstmt.setString(1, nombre);
-                    pstmt.setString(2, apellido);
-                    pstmt.setString(3, telefono);
-                    pstmt.setDate(4, java.sql.Date.valueOf(fechaNacimiento));
-                    pstmt.setString(5, contrasenas[0]); // Usar la primera contraseña ya que ambas coinciden
+                    pstmt.setString(1, username); // Insertar el nombre de usuario
+                    pstmt.setString(2, nombre);
+                    pstmt.setString(3, apellido);
+                    pstmt.setString(4, telefono);
+                    pstmt.setDate(5, java.sql.Date.valueOf(fechaNacimiento));
+                    pstmt.setString(6, contrasenas[0]); // Usar la primera contraseña ya que ambas coinciden
 
                     // Obtener la fecha y hora actuales del sistema
                     java.util.Date fechaActual = new java.util.Date();
                     java.sql.Date fechaSQL = new java.sql.Date(fechaActual.getTime());
 
                     // Establecer la fecha actual como valor para la columna de creado_en
-                    pstmt.setDate(6, fechaSQL);
+                    pstmt.setDate(7, fechaSQL);
 
                     // Ejecutar la sentencia SQL
                     int filasInsertadas = pstmt.executeUpdate();
 
                     // Comprobar si se insertaron filas
                     if (filasInsertadas > 0) {
-                        JOptionPane.showMessageDialog(this, "Se insertaron correctamente los datos en la tabla usuarios.");
+                        JOptionPane.showMessageDialog(this, "¡Registrado con Éxito!");
+                        // Cerrar este JFrame y abrir el JFrame "Login"
+                        JFrame loginFrame = new Login(); // Cambia "Login" por el nombre de tu JFrame de login
+                        loginFrame.setVisible(true);
+                        dispose(); // Cerrar este JFrame
                     } else {
                         JOptionPane.showMessageDialog(this, "No se insertaron datos en la tabla usuarios.");
                     }
@@ -261,23 +289,32 @@ public class Registro extends javax.swing.JFrame {
         } catch (Exception e) {
             JOptionPane.showMessageDialog(this, "Fecha no válida: " + e.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
         }
-
     }//GEN-LAST:event_SiguienteActionPerformed
+
+    private void atrasMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_atrasMouseClicked
+        this.dispose();
+        Login frame = new Login();
+        frame.setVisible(true);
+    }//GEN-LAST:event_atrasMouseClicked
 
     
     private String[] solicitarContrasena() {
         JPanel panel = new JPanel(new GridLayout(0, 1));
+        JTextField usernameField = new JTextField(10); // Campo de texto para el nombre de usuario
         JPasswordField passwordField1 = new JPasswordField(10);
         JPasswordField passwordField2 = new JPasswordField(10);
+        panel.add(new JLabel("Ingrese su nombre de usuario:"));
+        panel.add(usernameField);
         panel.add(new JLabel("Ingrese su nueva contraseña:"));
         panel.add(passwordField1);
         panel.add(new JLabel("Confirme su nueva contraseña:"));
         panel.add(passwordField2);
 
-        int result = JOptionPane.showConfirmDialog(null, panel, "Registro de Contraseña",
+        int result = JOptionPane.showConfirmDialog(null, panel, "Registro de Usuario",
                 JOptionPane.OK_CANCEL_OPTION, JOptionPane.PLAIN_MESSAGE);
 
         if (result == JOptionPane.OK_OPTION) {
+            username = usernameField.getText(); // Almacenar el nombre de usuario ingresado
             String password1 = new String(passwordField1.getPassword());
             String password2 = new String(passwordField2.getPassword());
 
@@ -290,6 +327,28 @@ public class Registro extends javax.swing.JFrame {
         } else {
             return null;
         }
+    }
+    
+    private boolean existeNombreUsuario(String username) {
+        String url = "jdbc:ucanaccess://X.accdb";
+        String usuario = ""; // Usuario de la base de datos, si es necesario
+        String contraseña = ""; // Contraseña de la base de datos, si es necesario
+        String sql = "SELECT COUNT(*) FROM usuarios WHERE user_handle = ?";
+
+        try (Connection con = DriverManager.getConnection(url, usuario, contraseña);
+         PreparedStatement pstmt = con.prepareStatement(sql)) {
+        pstmt.setString(1, username);
+        try (ResultSet rs = pstmt.executeQuery()) {
+            if (rs.next()) {
+                int count = rs.getInt(1);
+                return count > 0; // Devuelve true si el nombre de usuario existe en la base de datos
+            }
+        }
+    } catch (SQLException e) {
+        JOptionPane.showMessageDialog(this, "Error al verificar el nombre de usuario en la base de datos: " + e.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
+    }
+    // Si ocurre un error o no se encuentra el nombre de usuario, devuelve false
+    return false;
     }
     
     /**
@@ -331,6 +390,7 @@ public class Registro extends javax.swing.JFrame {
     private javax.swing.JLabel Logo;
     private javax.swing.JButton Siguiente;
     private javax.swing.JTextField ape;
+    private javax.swing.JLabel atras;
     private javax.swing.JComboBox<String> dayComboBox;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
