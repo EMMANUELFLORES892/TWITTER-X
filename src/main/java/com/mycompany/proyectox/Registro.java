@@ -2,12 +2,17 @@
 package com.mycompany.proyectox;
 
 import java.awt.Color;
+import java.awt.GridLayout;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
+import java.time.LocalDate;
 import javax.swing.JFrame;
+import javax.swing.JLabel;
 import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+import javax.swing.JPasswordField;
 
 
 public class Registro extends javax.swing.JFrame {
@@ -49,6 +54,13 @@ public class Registro extends javax.swing.JFrame {
         jLabel8 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         tel = new javax.swing.JTextField();
+        jLabel1 = new javax.swing.JLabel();
+        dayComboBox = new javax.swing.JComboBox<>();
+        monthComboBox = new javax.swing.JComboBox<>();
+        yearComboBox = new javax.swing.JComboBox<>();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -87,50 +99,88 @@ public class Registro extends javax.swing.JFrame {
             }
         });
 
+        jLabel1.setText("<html>\nEsta información no será pública. Confirma tu propia edad, incluso<br>\nsi esta cuenta es para una empresa, una mascota u otra cosa.");
+
+        dayComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", " " }));
+
+        monthComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre" }));
+
+        yearComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "1970", "1971", "1972", "1973", "1974", "1975", "1976", "1977", "1978", "1979", "1980", "1981", "1982", "1983", "1984", "1985", "1986", "1987", "1988", "1989", "1990", "1991", "1992", "1993", "1994", "1995", "1996", "1997", "1998", "1999", "2000", "2001", "2002", "2003", "2004", "2005", "2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020", "2021", "2022", "2023", "2024", " " }));
+
+        jLabel2.setText("Dia");
+
+        jLabel3.setText("Mes");
+
+        jLabel4.setText("Año");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(111, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel6)
-                    .addComponent(nom, javax.swing.GroupLayout.PREFERRED_SIZE, 307, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel8)
-                    .addComponent(ape, javax.swing.GroupLayout.PREFERRED_SIZE, 308, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(tel, javax.swing.GroupLayout.PREFERRED_SIZE, 305, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel7))
-                .addGap(106, 106, 106))
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(227, 227, 227)
-                        .addComponent(Logo, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(156, 156, 156)
+                        .addComponent(Siguiente, javax.swing.GroupLayout.PREFERRED_SIZE, 186, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(159, 159, 159)
-                        .addComponent(Siguiente, javax.swing.GroupLayout.PREFERRED_SIZE, 186, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGap(67, 67, 67)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel6)
+                            .addComponent(jLabel8)
+                            .addComponent(jLabel7)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jLabel2)
+                                .addGap(12, 12, 12)
+                                .addComponent(dayComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(29, 29, 29)
+                                .addComponent(jLabel3)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(monthComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(28, 28, 28)
+                                .addComponent(jLabel4)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(yearComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                .addComponent(tel, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 355, Short.MAX_VALUE)
+                                .addComponent(nom, javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(ape, javax.swing.GroupLayout.Alignment.LEADING))
+                            .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(38, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(Logo, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(197, 197, 197))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(Logo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(66, 66, 66)
+                .addGap(70, 70, 70)
                 .addComponent(jLabel6)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(nom, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(29, 29, 29)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 14, Short.MAX_VALUE)
+                .addComponent(nom, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
                 .addComponent(jLabel8)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(ape, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(34, 34, 34)
+                .addComponent(ape, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(26, 26, 26)
                 .addComponent(jLabel7)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(tel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(123, 123, 123)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 14, Short.MAX_VALUE)
+                .addComponent(tel, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(25, 25, 25)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(34, 34, 34)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(dayComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(monthComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(yearComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel3)
+                    .addComponent(jLabel4))
+                .addGap(35, 35, 35)
                 .addComponent(Siguiente)
-                .addGap(67, 67, 67))
+                .addGap(38, 38, 38))
         );
 
         pack();
@@ -149,71 +199,99 @@ public class Registro extends javax.swing.JFrame {
     }//GEN-LAST:event_nomActionPerformed
 
     private void SiguienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SiguienteActionPerformed
-        //String url = "jdbc:ucanaccess://C://Users//PC//Documentos//NetBeansProjects//TWITTER-X//X.accdb";
+        // Información de la base de datos
         String url = "jdbc:ucanaccess://X.accdb";
         String usuario = ""; // Usuario de la base de datos, si es necesario
         String contraseña = ""; // Contraseña de la base de datos, si es necesario
 
-        /*String userHandle = nombre.getText();
-        //String email = txtRegistroEmail.getText();
-        String nombre = nombre.getText();
-        String apellido = pellido.getText();
-        String telefono = telefono.getText();*/
-
+        // Obtener los valores de los campos de texto
         String nombre = nom.getText();
         String apellido = ape.getText();
         String telefono = tel.getText();
 
-        try (Connection con = DriverManager.getConnection(url, usuario, contraseña)) {
-            // Sentencia SQL para insertar datos en la tabla "usuarios"
-            String sql = "INSERT INTO usuarios ( nombre, apellido, telefono, creado_en) VALUES (?, ?, ?, ?)";
+        // Obtener los valores seleccionados de los JComboBox
+        int day = Integer.parseInt(dayComboBox.getSelectedItem().toString());
+        int month = monthComboBox.getSelectedIndex() + 1; // Meses en java.time comienzan en 1
+        int year = Integer.parseInt(yearComboBox.getSelectedItem().toString());
 
-            try (PreparedStatement pstmt = con.prepareStatement(sql)) {
-                // Establecer los valores de los parámetros en la sentencia SQL
-                //pstmt.setString(1, userHandle);
-                //pstmt.setString(2, email);
-                pstmt.setString(1, nombre);
-                pstmt.setString(2, apellido);
-                pstmt.setString(3, telefono);
+        // Solicitar y validar la contraseña
+        String[] contrasenas = solicitarContrasena();
+        if (contrasenas == null) {
+            // Si las contraseñas no coinciden o el usuario cancela, no continuar
+            return;
+        }
 
-                // Obtener la fecha y hora actuales del sistema
-                java.util.Date fechaActual = new java.util.Date();
-                java.sql.Date fechaSQL = new java.sql.Date(fechaActual.getTime());
+        try {
+            // Crear la fecha de nacimiento
+            LocalDate fechaNacimiento = LocalDate.of(year, month, day);
 
-                // Establecer la fecha actual como valor para la columna de creado_en
-                pstmt.setDate(4, fechaSQL);
+            // Conectar a la base de datos
+            try (Connection con = DriverManager.getConnection(url, usuario, contraseña)) {
+                // Sentencia SQL para insertar datos en la tabla "usuarios"
+                String sql = "INSERT INTO usuarios (nombre, apellido, telefono, fecha_nacimiento, contra, creado_en) VALUES (?, ?, ?, ?, ?, ?)";
 
-                // Ejecutar la sentencia SQL
-                int filasInsertadas = pstmt.executeUpdate();
+                try (PreparedStatement pstmt = con.prepareStatement(sql)) {
+                    // Establecer los valores de los parámetros en la sentencia SQL
+                    pstmt.setString(1, nombre);
+                    pstmt.setString(2, apellido);
+                    pstmt.setString(3, telefono);
+                    pstmt.setDate(4, java.sql.Date.valueOf(fechaNacimiento));
+                    pstmt.setString(5, contrasenas[0]); // Usar la primera contraseña ya que ambas coinciden
 
-                // Comprobar si se insertaron filas
-                if (filasInsertadas > 0) {
-                    System.out.println("Se insertaron correctamente los datos en la tabla usuarios.");
-                } else {
-                    System.out.println("No se insertaron datos en la tabla usuarios.");
+                    // Obtener la fecha y hora actuales del sistema
+                    java.util.Date fechaActual = new java.util.Date();
+                    java.sql.Date fechaSQL = new java.sql.Date(fechaActual.getTime());
+
+                    // Establecer la fecha actual como valor para la columna de creado_en
+                    pstmt.setDate(6, fechaSQL);
+
+                    // Ejecutar la sentencia SQL
+                    int filasInsertadas = pstmt.executeUpdate();
+
+                    // Comprobar si se insertaron filas
+                    if (filasInsertadas > 0) {
+                        JOptionPane.showMessageDialog(this, "Se insertaron correctamente los datos en la tabla usuarios.");
+                    } else {
+                        JOptionPane.showMessageDialog(this, "No se insertaron datos en la tabla usuarios.");
+                    }
                 }
             }
-        }catch(SQLException e){
-            JOptionPane.showMessageDialog(null,e.toString());
+        } catch (SQLException e) {
+            JOptionPane.showMessageDialog(this, "Error al insertar en la base de datos: " + e.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(this, "Fecha no válida: " + e.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
         }
-
-        /*try{
-            Connection con = Conexion.getConnection();
-            PreparedStatement ps = con.prepareStatement("INSERT INTO usuarios (user_handle, email,nombre,apellido,telefono) VALUES(?,?,?,?,?)");
-            ps.setString(1,userHandle);
-            ps.setString(2,email);
-            ps.setString(3,nombre);
-            ps.setString(4,apellido);
-            ps.setString(5,telefono);
-            ps.executeUpdate();
-            JOptionPane.showMessageDialog(null,"Registro guardado");
-        }
-        catch(SQLException e){
-            JOptionPane.showMessageDialog(null,e.toString());
-        }*/
 
     }//GEN-LAST:event_SiguienteActionPerformed
 
+    
+    private String[] solicitarContrasena() {
+        JPanel panel = new JPanel(new GridLayout(0, 1));
+        JPasswordField passwordField1 = new JPasswordField(10);
+        JPasswordField passwordField2 = new JPasswordField(10);
+        panel.add(new JLabel("Ingrese su nueva contraseña:"));
+        panel.add(passwordField1);
+        panel.add(new JLabel("Confirme su nueva contraseña:"));
+        panel.add(passwordField2);
+
+        int result = JOptionPane.showConfirmDialog(null, panel, "Registro de Contraseña",
+                JOptionPane.OK_CANCEL_OPTION, JOptionPane.PLAIN_MESSAGE);
+
+        if (result == JOptionPane.OK_OPTION) {
+            String password1 = new String(passwordField1.getPassword());
+            String password2 = new String(passwordField2.getPassword());
+
+            if (password1.equals(password2)) {
+                return new String[]{password1, password2};
+            } else {
+                JOptionPane.showMessageDialog(null, "Las contraseñas no coinciden. Inténtelo de nuevo.", "Error", JOptionPane.ERROR_MESSAGE);
+                return null;
+            }
+        } else {
+            return null;
+        }
+    }
+    
     /**
      * @param args the command line arguments
      */
@@ -253,10 +331,17 @@ public class Registro extends javax.swing.JFrame {
     private javax.swing.JLabel Logo;
     private javax.swing.JButton Siguiente;
     private javax.swing.JTextField ape;
+    private javax.swing.JComboBox<String> dayComboBox;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
+    private javax.swing.JComboBox<String> monthComboBox;
     private javax.swing.JTextField nom;
     private javax.swing.JTextField tel;
+    private javax.swing.JComboBox<String> yearComboBox;
     // End of variables declaration//GEN-END:variables
 }
