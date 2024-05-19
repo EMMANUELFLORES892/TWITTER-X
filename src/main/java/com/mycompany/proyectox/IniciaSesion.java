@@ -224,7 +224,6 @@ public class IniciaSesion extends javax.swing.JFrame {
 
                     // Establecer el ID de usuario en el segundo JFrame
                     base.setUserID(userID);
-
                     // Mostrar el segundo JFrame
                     base.setVisible(true);
                 } else {
