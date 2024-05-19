@@ -220,13 +220,13 @@ public class IniciaSesion extends javax.swing.JFrame {
                     this.dispose();
 
                     // Crear una nueva instancia del JFrame que deseas abrir (BasePagina)
-                    BasePagina frame = new BasePagina();
+                    BasePagina base = new BasePagina();
 
                     // Establecer el ID de usuario en el segundo JFrame
-                    frame.setUserID(userID);
+                    base.setUserID(userID);
 
                     // Mostrar el segundo JFrame
-                    frame.setVisible(true);
+                    base.setVisible(true);
                 } else {
                     // La contraseña ingresada no coincide con la contraseña en la base de datos
                     System.out.println("La contraseña ingresada no coincide con la contraseña en la base de datos.");

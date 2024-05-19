@@ -15,14 +15,17 @@ import javax.swing.JOptionPane;
  * @author user
  */
 public class BasePagina extends javax.swing.JFrame {
-    private int userID;
-    /**
-     * Creates new form BasePagina
-     */
+     private int userID;
+
+    // Constructor de la clase BasePagina
     public BasePagina() {
         initComponents();
-        this.getContentPane().setBackground(Color.white);
-        System.out.println(userID);
+    }
+
+    // Método para establecer el ID de usuario
+    public void setUserID(int userID) {
+        this.userID = userID;
+        System.out.println("ID de usuario en BasePagina: " + userID);
     }
 
     /**
@@ -531,9 +534,7 @@ public class BasePagina extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
     //IMPORTANTE NO BORRAR ESTA PARTE ---------------------------- AQUI SE ESTA GUARDANDO EL ID DEL USUARIO DESDE LOGIN
-    public void setUserID(int userID) {
-        this.userID = userID;
-    }
+    
     //IMPORTANTE NO BORRAR ESTA PARTE ---------------------------- AQUI SE ESTA GUARDANDO EL ID DEL USUARIO DESDE LOGIN
     
     
