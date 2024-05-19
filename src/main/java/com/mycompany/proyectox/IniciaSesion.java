@@ -195,100 +195,55 @@ public class IniciaSesion extends javax.swing.JFrame {
     }//GEN-LAST:event_contrasActionPerformed
 
     private void SiguienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SiguienteActionPerformed
-        // TODO add your handling code here:
-        // Cerrar el JFrame actual
-    /*this.dispose();
-    
-    // Crear una nueva instancia del JFrame que deseas abrir
-    BasePagina frame = new BasePagina();
-    frame.setVisible(true);*/
-    
-    // Obtener el texto ingresado en el JTextField
-        String textoIngresado = Usuario.getText();
-        this.error1.setVisible(false);
-        this.error2.setVisible(false);
-        // Obtener el texto ingresado en el JPasswordField (asumiendo que se llama passwordField)
-        char[] contrasenaIngresada = contras.getPassword();
-        String contrasena = new String(contrasenaIngresada); // Convertir el arreglo de caracteres en una cadena
-        
-        // Realizar la conexión a la base de datos
-        try (Connection conn = DriverManager.getConnection("jdbc:ucanaccess://X.accdb")) {
-            // Crear la consulta SQL para seleccionar la columna deseada
-            String sql = "SELECT user_handle, email FROM usuarios";
-            
-            // Ejecutar la consulta
-            boolean encontrado = false; // Bandera para indicar si se encontró una coincidencia
-            try (Statement stmt = conn.createStatement();
-                 ResultSet rs = stmt.executeQuery(sql)) {
-                // Iterar sobre los resultados
-                while (rs.next()) {
-                    // Obtener el valor de la columna en la fila actual
-                    String valorBaseDatos = rs.getString("user_handle");
-                    String valorBaseDatos1 = rs.getString("email");
-                    
-                    // Comparar el valor de la base de datos con el texto ingresado
-                    if (textoIngresado.equals(valorBaseDatos) || textoIngresado.equals(valorBaseDatos1)) {
-                        // El texto ingresado es igual a un valor en la base de datos
-                        System.out.println("El texto ingresado es igual a un valor en la base de datos.");
-                        // Realizar alguna acción adicional si es necesario
-                        encontrado = true;
+     String textoIngresado = Usuario.getText();
+    char[] contrasenaIngresada = contras.getPassword();
+    String contrasena = new String(contrasenaIngresada);
 
-                        break; // Salir del bucle si se encuentra una coincidencia
-                    }
-                }
-            }
-//HASTA ESTA PARTE SE VERIFICA QUE EL NOMBRE DE USUARIO INGRESADO ESTE DENTRO DE LA BASE DE DATOS------------------------------------------------------
-            // Verificar si se encontró una coincidencia en el JTextField
-            if (encontrado) {
-                // Ahora, verifica el dato ingresado en el JPasswordField
-                String sqlContrasena = "SELECT contra FROM usuarios WHERE user_handle = ? OR email = ?";
-                try (PreparedStatement pstmt = conn.prepareStatement(sqlContrasena)) {
-                    pstmt.setString(1, textoIngresado);
-                    pstmt.setString(2, textoIngresado);
-                    ResultSet rsContrasena = pstmt.executeQuery();
-                    if (rsContrasena.next()) {
-                        String contrasenaBaseDatos = rsContrasena.getString("contra");
-                        contrasenaBaseDatos = contrasenaBaseDatos.replace("<div>", "").replace("</div>", "");
-                        if (contrasena.equals(contrasenaBaseDatos)) {
-                            // La contraseña ingresada coincide con la contraseña en la base de datos
-                            System.out.println("La contraseña ingresada coincide con la contraseña en la base de datos.");
-                            this.dispose();
-                            BasePagina frame = new BasePagina();
-                            frame.setVisible(true);
-                            
-                            // Realizar alguna acción adicional si es necesario
-                        } else {
-                            // La contraseña ingresada no coincide con la contraseña en la base de datos
-                            System.out.println("La contraseña ingresada no coincide con la contraseña en la base de datos.");
-                            this.error2.setVisible(true);
-                            System.out.println(contrasenaIngresada);//para comprobar que dato retiene
-                            System.out.println(contrasenaBaseDatos);
-                        }
-                    } else {
-                        // No se encontró el usuario en la base de datos
-                        System.out.println("El usuario no existe en la base de datos.");
-                        // Realizar alguna acción adicional si es necesario
-                    }
+    try (Connection conn = DriverManager.getConnection("jdbc:ucanaccess://X.accdb")) {
+        String sql = "SELECT user_id, contra FROM usuarios WHERE user_handle = ? OR email = ?";
+        try (PreparedStatement pstmt = conn.prepareStatement(sql)) {
+            pstmt.setString(1, textoIngresado);
+            pstmt.setString(2, textoIngresado);
+            ResultSet rs = pstmt.executeQuery();
+
+            if (rs.next()) {
+                int userID = rs.getInt("user_id");
+                String contrasenaBaseDatos = rs.getString("contra");
+                contrasenaBaseDatos = contrasenaBaseDatos.replace("<div>", "").replace("</div>", "");
+
+                if (contrasena.equals(contrasenaBaseDatos)) {
+                    // La contraseña ingresada coincide con la contraseña en la base de datos
+                    System.out.println("La contraseña ingresada coincide con la contraseña en la base de datos.");
+                    System.out.println("ID de usuario: " + userID);
+
+                    // Cerrar el JFrame actual
+                    this.dispose();
+
+                    // Crear una nueva instancia del JFrame que deseas abrir (BasePagina)
+                    BasePagina frame = new BasePagina();
+
+                    // Establecer el ID de usuario en el segundo JFrame
+                    frame.setUserID(userID);
+
+                    // Mostrar el segundo JFrame
+                    frame.setVisible(true);
+                } else {
+                    // La contraseña ingresada no coincide con la contraseña en la base de datos
+                    System.out.println("La contraseña ingresada no coincide con la contraseña en la base de datos.");
+                    this.error2.setVisible(true);
+                    System.out.println(contrasenaIngresada); // Para comprobar qué datos retiene
+                    System.out.println(contrasenaBaseDatos);
                 }
             } else {
-                // El texto ingresado en el JTextField no coincide con ningún valor en ninguna columna
-                System.out.println("El texto ingresado en el JTextField no coincide con ningún valor en ninguna columna.");
+                // No se encontró el usuario en la base de datos
+                System.out.println("El usuario no existe en la base de datos.");
                 this.error1.setVisible(true);
                 this.error2.setVisible(true);
-                // Realizar alguna acción adicional si es necesario
             }
-        } catch (SQLException ex) {
-            ex.printStackTrace();
         }
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    } catch (SQLException ex) {
+        ex.printStackTrace();
+    }
     }//GEN-LAST:event_SiguienteActionPerformed
 
     private void RegistroMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_RegistroMouseClicked

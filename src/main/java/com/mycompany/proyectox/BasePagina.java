@@ -15,13 +15,14 @@ import javax.swing.JOptionPane;
  * @author user
  */
 public class BasePagina extends javax.swing.JFrame {
-
+    private int userID;
     /**
      * Creates new form BasePagina
      */
     public BasePagina() {
         initComponents();
         this.getContentPane().setBackground(Color.white);
+        System.out.println(userID);
     }
 
     /**
@@ -529,7 +530,13 @@ public class BasePagina extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
+    //IMPORTANTE NO BORRAR ESTA PARTE ---------------------------- AQUI SE ESTA GUARDANDO EL ID DEL USUARIO DESDE LOGIN
+    public void setUserID(int userID) {
+        this.userID = userID;
+    }
+    //IMPORTANTE NO BORRAR ESTA PARTE ---------------------------- AQUI SE ESTA GUARDANDO EL ID DEL USUARIO DESDE LOGIN
+    
+    
     private void BotonSiguiendoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonSiguiendoActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_BotonSiguiendoActionPerformed
