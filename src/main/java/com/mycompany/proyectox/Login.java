@@ -4,6 +4,10 @@
  */
 package com.mycompany.proyectox;
 
+import com.mycompany.proyectox.BotonRedondo;
+import com.mycompany.proyectox.Imagenes;
+import com.mycompany.proyectox.IniciaSesion;
+import com.mycompany.proyectox.Registro;
 import java.awt.*;
 import static java.awt.Color.blue;
 import static java.awt.Color.cyan;
@@ -67,17 +71,15 @@ public class Login extends javax.swing.JFrame {
         jLabel5 = new javax.swing.JLabel();
         Boton_Apple = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        Sesion = new javax.swing.JButton();
         boton_google = new javax.swing.JButton();
+        jLabel6 = new javax.swing.JLabel();
         cuenta = new javax.swing.JButton();
-        jSeparator1 = new javax.swing.JSeparator();
+        Sesion = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(0, 0, 0));
 
         logoX.setText(".");
-        logoX.setPreferredSize(new java.awt.Dimension(384, 216));
 
         jLabel2.setFont(new java.awt.Font("Arial Black", 1, 36)); // NOI18N
         jLabel2.setText("<html>\nLo que esta <br>\npasando ahora\n");
@@ -93,10 +95,31 @@ public class Login extends javax.swing.JFrame {
             }
         });
 
-        jLabel3.setText("<html>\nAl registrarte, aceptas los <font color= \"rgb(51, 153, 255)\">Términos de servicio</font> y la <font color= \"rgb(51, 153, 255)\">Política <br>\nde privacidad</font>, incluida la <font color= \"rgb(51, 153, 255)\">política de Uso de Cookies</font>.");
+        jLabel3.setText("<html>\nAl registrarte, aceptas los Términos de servicio y la Política <br>\nde privacidad, incluida la política de Uso de Cookies.");
+
+        boton_google.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 12)); // NOI18N
+        boton_google.setText("Registrarse con Google");
+        boton_google.setBorder(null);
+        boton_google.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                boton_googleActionPerformed(evt);
+            }
+        });
 
         jLabel6.setFont(new java.awt.Font("Arial Black", 1, 14)); // NOI18N
         jLabel6.setText("¿Ya tienes cuenta?");
+
+        cuenta.setBackground(new java.awt.Color(51, 204, 255));
+        cuenta.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 12)); // NOI18N
+        cuenta.setForeground(new java.awt.Color(255, 255, 255));
+        cuenta.setText("Crear Cuenta");
+        cuenta.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        cuenta.setBorderPainted(false);
+        cuenta.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cuentaActionPerformed(evt);
+            }
+        });
 
         Sesion.setBackground(new java.awt.Color(51, 204, 255));
         Sesion.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 12)); // NOI18N
@@ -110,74 +133,49 @@ public class Login extends javax.swing.JFrame {
             }
         });
 
-        boton_google.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 12)); // NOI18N
-        boton_google.setText("Registrarse con Google");
-        boton_google.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                boton_googleActionPerformed(evt);
-            }
-        });
-
-        cuenta.setBackground(new java.awt.Color(0, 204, 255));
-        cuenta.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 12)); // NOI18N
-        cuenta.setForeground(new java.awt.Color(255, 255, 255));
-        cuenta.setText("Crear Cuenta");
-        cuenta.setBorder(null);
-        cuenta.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        cuenta.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cuentaActionPerformed(evt);
-            }
-        });
-
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(logoX, javax.swing.GroupLayout.PREFERRED_SIZE, 332, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 36, Short.MAX_VALUE)
+                .addComponent(logoX, javax.swing.GroupLayout.PREFERRED_SIZE, 340, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 32, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(cuenta, javax.swing.GroupLayout.PREFERRED_SIZE, 257, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(Sesion, javax.swing.GroupLayout.PREFERRED_SIZE, 257, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(cuenta, javax.swing.GroupLayout.PREFERRED_SIZE, 257, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel5)
                     .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel6)
-                    .addComponent(boton_google, javax.swing.GroupLayout.PREFERRED_SIZE, 257, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Boton_Apple, javax.swing.GroupLayout.PREFERRED_SIZE, 257, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(6, 6, 6)
-                        .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 257, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(26, 26, 26))
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                        .addComponent(boton_google, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(Boton_Apple, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 257, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabel6))
+                .addGap(60, 60, 60))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(logoX, javax.swing.GroupLayout.PREFERRED_SIZE, 284, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(43, 43, 43))
             .addGroup(layout.createSequentialGroup()
-                .addGap(14, 14, 14)
-                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel5)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(boton_google, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(Boton_Apple, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 11, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(9, 9, 9)
-                .addComponent(cuenta, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jLabel5)
+                        .addGap(9, 9, 9)
+                        .addComponent(boton_google, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(Boton_Apple, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(cuenta, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(logoX, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 247, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
                 .addComponent(jLabel6)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(Sesion, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(15, Short.MAX_VALUE))
+                .addGap(35, 35, 35))
         );
 
         jLabel3.getAccessibleContext().setAccessibleName("");
@@ -186,29 +184,30 @@ public class Login extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void Boton_AppleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Boton_AppleActionPerformed
-        // TODO add your handling code here:
+        this.dispose();
+        Registro frame = new Registro();
+        frame.setVisible(true);
     }//GEN-LAST:event_Boton_AppleActionPerformed
 
     private void SesionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SesionActionPerformed
         // TODO add your handling code here:
         this.dispose();
-    
-    // Crear una nueva instancia del JFrame que deseas abrir
-    IniciaSesion frame = new IniciaSesion();
-    frame.setVisible(true);
+        IniciaSesion frame = new IniciaSesion();
+        frame.setVisible(true);
     }//GEN-LAST:event_SesionActionPerformed
 
     private void boton_googleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_boton_googleActionPerformed
-        // TODO add your handling code here:
+        this.dispose();
+        Registro frame = new Registro();
+        frame.setVisible(true);
     }//GEN-LAST:event_boton_googleActionPerformed
 
     private void cuentaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cuentaActionPerformed
-        // TODO add your handling code here:
-        this.dispose();
-    
-    // Crear una nueva instancia del JFrame que deseas abrir
+    this.dispose();
     Registro frame = new Registro();
     frame.setVisible(true);
+    
+    
     }//GEN-LAST:event_cuentaActionPerformed
 
     /**
@@ -249,13 +248,12 @@ public class Login extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton Boton_Apple;
     private javax.swing.JButton Sesion;
-    public javax.swing.JButton boton_google;
+    private javax.swing.JButton boton_google;
     private javax.swing.JButton cuenta;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
-    private javax.swing.JSeparator jSeparator1;
     private javax.swing.JLabel logoX;
     // End of variables declaration//GEN-END:variables
 }
