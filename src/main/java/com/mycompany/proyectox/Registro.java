@@ -1,10 +1,11 @@
 
 package com.mycompany.proyectox;
 
+import com.mycompany.proyectox.Imagenes;
 import java.awt.Color;
 import java.awt.GridLayout;
 import java.sql.Connection;
-import java.sql.DriverManager;
+import java.sql.DriverManager;//
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
