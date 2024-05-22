@@ -3,6 +3,10 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package com.mycompany.proyectox;
+import com.mycompany.proyectox.BasePagina;
+import com.mycompany.proyectox.BotonRedondo;
+import com.mycompany.proyectox.Imagenes;//
+import com.mycompany.proyectox.Registro;
 import java.awt.Color;
 import static java.awt.Color.gray;
 import static java.awt.Color.white;
