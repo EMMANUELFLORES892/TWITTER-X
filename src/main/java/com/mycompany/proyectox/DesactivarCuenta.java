@@ -4,7 +4,7 @@
  */
 package com.mycompany.proyectox;
 
-import java.awt.Color;
+import java.awt.Color;//
 
 /**
  *
